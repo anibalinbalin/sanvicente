@@ -54,7 +54,7 @@ export default async function HousePage({
         <h1>{t('title')}</h1>
       </VisuallyHiddenRoot>
       <div className={stack({ gap: '3xl' })}>
-        <BackToLink href={homePath}>Back to home</BackToLink>
+        <BackToLink href={homePath}>{t('navigation.back.gallery')}</BackToLink>
 
         <section className={stack({ gap: 'm' })}>
           <h2 className={css({ textStyle: 'base', lineHeight: 'tight', color: 'text2', fontSize: '1' })}>

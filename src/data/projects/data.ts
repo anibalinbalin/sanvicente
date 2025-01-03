@@ -5,7 +5,9 @@ export const projects: Project[] = [
     id: '1',
     slug: 'dining-area',
     name: 'Dining area',
+    translationKey: 'projects.dining_area',
     category: 'Interior',
+    categoryTranslationKey: 'projects.categories.interior',
     featured: true,
     featureMediaNarrow: {
       id: '1',
@@ -59,7 +61,9 @@ export const projects: Project[] = [
     id: '2',
     slug: 'bedroom-1',
     name: 'Bedroom 1',
+    translationKey: 'projects.bedroom_1',
     category: 'Interior',
+    categoryTranslationKey: 'projects.categories.interior',
     featured: true,
     featureMediaNarrow: {
       id: '5',
@@ -145,7 +149,9 @@ export const projects: Project[] = [
     id: '3',
     slug: 'bedroom-2',
     name: 'Bedroom 2',
+    translationKey: 'projects.bedroom_2',
     category: 'Interior',
+    categoryTranslationKey: 'projects.categories.interior',
     featured: true,
     featureMediaNarrow: {
       id: '10',
@@ -192,7 +198,9 @@ export const projects: Project[] = [
     id: '4',
     slug: 'bedroom-3',
     name: 'Bedroom 3',
+    translationKey: 'projects.bedroom_3',
     category: 'Interior',
+    categoryTranslationKey: 'projects.categories.interior',
     featured: false,
     featureMediaNarrow: {
       id: '12',
@@ -232,7 +240,9 @@ export const projects: Project[] = [
     id: '8',
     slug: 'exterior',
     name: 'Exterior',
+    translationKey: 'projects.exterior',
     category: 'Exterior',
+    categoryTranslationKey: 'projects.categories.exterior',
     featured: false,
     featureMediaNarrow: {
       id: '22',
@@ -325,7 +335,9 @@ export const projects: Project[] = [
     id: '9',
     slug: 'additional',
     name: 'Additional photos',
+    translationKey: 'projects.additional',
     category: 'Additional',
+    categoryTranslationKey: 'projects.categories.additional',
     featured: false,
     featureMediaNarrow: {
       id: '33',

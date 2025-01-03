@@ -3,8 +3,8 @@
     "title": "Home",
     "introduction": {
       "title": "Pueblo San Vicente",
-      "subtitle": "Black Barn, Located in Pueblo San Vicente, a beautiful coastal town in Uruguay.",
-      "description": "Experience a unique stay in our Black Barn, a modern architectural gem that combines the warmth of wood with elegant contemporary lines. Nestled in the peaceful Pueblo San Vicente, where Uruguay's rural charm meets coastal breeze, offering a perfect retreat to connect with nature without compromising on comfort."
+      "subtitle": "Our house is located in Pueblo San Vicente, a beautiful coastal town in Uruguay.",
+      "description": "Experience a unique stay in our modern Nordic-style house that combines the warmth of wood with contemporary lines. Nestled in the peaceful Pueblo San Vicente, where Uruguay's rural charm meets coastal breeze, offering a perfect retreat to connect with nature without compromising on comfort."
     },
     "gallery": {
       "title": "Image gallery",
@@ -24,7 +24,14 @@
     "dining_area": "Dining area",
     "bedroom_1": "Bedroom 1",
     "bedroom_2": "Bedroom 2",
-    "bedroom_3": "Bedroom 3"
+    "bedroom_3": "Bedroom 3",
+    "exterior": "Exterior",
+    "additional": "Additional photos",
+    "categories": {
+      "interior": "Interior",
+      "exterior": "Exterior",
+      "additional": "Additional"
+    }
   },
   "house": {
     "title": "House",
@@ -37,16 +44,16 @@
     },
     "flora": {
       "title": "Flora",
-      "description": "The garden is practically self-sufficient and receives weekly maintenance from a professional gardener. The only flowers that require extra attention are the violets - feel free to water them when they look wilted."
+      "description": "The garden is practically self-sufficient and receives weekly maintenance from Christian, our gardener. The only flowers that require extra attention are the violets - feel free to water them when they look wilted. They are located next to the gym area."
     },
     "technology": {
       "title": "Technology",
       "wifi": {
         "title": "WiFi",
-        "description": "We offer two anonymous networks:",
+        "description": "Two WiFi networks available:",
         "networks": "2.4GHz and 5GHz",
         "password": "Password for both: antonpirulero",
-        "note": "The 5GHz network generally provides a faster connection and is sufficient for most uses."
+        "note": "As a general rule, 5GHz networks are faster than 2.4GHz, but the latter have better range at the expense of lower speed than the former."
       },
       "audio": {
         "title": "Audio System",

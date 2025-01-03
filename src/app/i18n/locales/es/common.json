@@ -3,8 +3,8 @@
     "title": "Inicio",
     "introduction": {
       "title": "Pueblo San Vicente",
-      "subtitle": "Black Barn, ubicada en Pueblo San Vicente, un hermoso pueblo costero en Uruguay.",
-      "description": "Disfrute de una estadía única en nuestra Black Barn, una joya arquitectónica moderna que combina la calidez de la madera con elegantes líneas contemporáneas. Ubicada en el tranquilo Pueblo San Vicente, donde el encanto rural de Uruguay se encuentra con la brisa costera, ofreciendo un refugio perfecto para conectar con la naturaleza sin renunciar al confort."
+      "subtitle": "Nuestra casa esta ubicada en Pueblo San Vicente, un hermoso pueblo costero en Uruguay.",
+      "description": "La casa es de estilo nordico que combina la calidez de la madera con lineas contemporáneas. Ubicada en el tranquilo Pueblo San Vicente, donde el encanto rural de Uruguay se encuentra con la brisa costera, ofreciendo un refugio perfecto para conectar con la naturaleza sin renunciar al confort."
     },
     "gallery": {
       "title": "Fotos",
@@ -24,29 +24,36 @@
     "dining_area": "Comedor",
     "bedroom_1": "Dormitorio 1",
     "bedroom_2": "Dormitorio 2",
-    "bedroom_3": "Dormitorio 3"
+    "bedroom_3": "Dormitorio 3",
+    "exterior": "Exterior",
+    "additional": "Fotos extras",
+    "categories": {
+      "interior": "Interior",
+      "exterior": "Exterior",
+      "additional": "Extras"
+    }
   },
   "house": {
     "title": "Casa",
     "fauna": {
       "title": "Fauna",
       "description1": "Vivir en el campo significa compartir el espacio con la naturaleza de manera armoniosa.",
-      "description2": "Tenemos una gatita negra que nos visita regularmente. Los vecinos colaboramos dejándole agua y comida para mantener su rutina diaria. Durante los meses de junio y julio, también recibimos la visita de un zorrito al cual le brindamos el mismo cuidado.",
-      "description3": "Ocasionalmente, algún pájaro curioso puede entrar al living. No hay que preocuparse, pues generalmente encuentran su salida por donde entraron. Si fuera necesario, basta con abrir las ventanas y esperar a que salgan por sí mismos.",
-      "description4": "Por las noches, es común que algunos insectos sean atraídos por la luz. Todos son inofensivos, incluyendo las arañas lobo que, a pesar de su apariencia intimidante, no trepan ni representan peligro alguno. También contamos con la presencia de pequeñas ranas que, atraídas por los insectos, suelen pasear por los ventanales externos."
+      "description2": "Tenemos una gatita negra que nos visita regularmente. Los vecinos colaboramos dejándole agua y comida para mantener su rutina diaria. Incluso en los meses de junio y julio, también recibimos la visita de un zorrito  al cual le brindamos el mismo cuidado.",
+      "description3": "Ocasionalmente, algún pájaro curioso puede entrar al living. No hay de que preocuparse, pues generalmente encuentran su salida por donde entraron. Si fuera necesario, basta con abrir las ventanas y esperar a que salgan por sí mismos.",
+      "description4": "Por las noches, es común que algunos insectos sean atraídos por la luz. Todos son inofensivos, incluyendo las arañas lobo que, a pesar de su apariencia intimidante, no trepan ni representan peligro alguno. También contamos con la presencia de pequeñas ranas que, esta vez atraídas por los insectos, se pasean por los ventanales externos."
     },
     "flora": {
       "title": "Flora",
-      "description": "El jardín es prácticamente autosuficiente y recibe mantenimiento semanal por parte de un jardinero profesional. Las únicas flores que requieren atención extra son las violetas - si gustan, pueden regarlas cuando las vean decaídas."
+      "description": "El jardín es prácticamente autosuficiente y recibe mantenimiento semanal por parte de Christian, nuestro jardinero. Las únicas flores que requieren atención extra son las violetas - si tienen ganas, pueden regarlas cuando las vean decaídas. Estan al costado del gimnasio."
     },
     "technology": {
       "title": "Tecnología",
       "wifi": {
         "title": "WiFi",
-        "description": "Ofrecemos dos redes anónimas:",
+        "description": "Dos dos redes WiFi:",
         "networks": "2.4GHz y 5GHz",
         "password": "Contraseña para ambas: antonpirulero",
-        "note": "La red de 5GHz generalmente proporciona una conexión más rápida y es suficiente para la mayoría de los usos."
+        "note": "Como regla general las redes de 5ghz son mas rapidas que las 2.4ghz pero estas ultimas tienen más alcance en funcion de una velocidad menor a la primera."
       },
       "audio": {
         "title": "Sistema de Audio",
@@ -61,15 +68,15 @@
       },
       "oven": {
         "title": "Horno",
-        "description": "Para simplificar su uso, recomendamos la función que calienta arriba y abajo con ventilador."
+        "description": "Para evitar adivinar que función hace qué, sugerimos para la gran mayoría seleccionar la función que calienta arriba y abajo con ventilador."
       },
       "cooktop": {
         "title": "Cooktop",
         "description": "El encendido requiere tres pasos:",
         "steps": {
-          "1": "Encender el equipo",
-          "2": "Seleccionar la hornalla deseada",
-          "3": "Ajustar la temperatura"
+          "1": "Encenderlo",
+          "2": "Seleccionar la hornalla",
+          "3": "Elegir la temperatura"
         }
       }
     },
@@ -77,7 +84,7 @@
       "title": "Lavadero",
       "washer": {
         "title": "Lavadora",
-        "description": "Recomendamos el programa \"Rápido\" de 30 minutos, con centrifugado a 1200 rpm para optimizar el secado posterior."
+        "description": "Recomendamos el programa \"Rápido\" de 30 minutos con centrifugado a 1200 rpm para optimizar el secado posterior."
       },
       "dryer": {
         "title": "Secadora",

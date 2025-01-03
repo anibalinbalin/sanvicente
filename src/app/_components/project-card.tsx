@@ -5,7 +5,7 @@ import { linkBox } from 'ds/patterns/link-box';
 import Link from 'next/link';
 import { AspectRatioRoot } from './aspect-ratio';
 import { ThemeImage } from './theme-image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { PATHS } from '@/app/_utils/constants/paths.constants';
 
 interface ProjectCardProps {
@@ -14,10 +14,11 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard = ({ project, sizes = '100vw' }: ProjectCardProps) => {
-  const { featureMediaNarrow, slug, category, name } = project;
+  const { featureMediaNarrow, slug, category, name, translationKey, categoryTranslationKey } = project;
   const src = featureMediaNarrow.url;
   const darkSrc = featureMediaNarrow.darkUrl;
   const locale = useLocale();
+  const t = useTranslations();
 
   return (
     <Link
@@ -46,7 +47,7 @@ export const ProjectCard = ({ project, sizes = '100vw' }: ProjectCardProps) => {
               src={src}
               darkSrc={darkSrc}
               priority
-              alt={name}
+              alt={translationKey ? t(translationKey) : name}
               fill
               style={{ objectFit: 'cover' }}
               quality={85}
@@ -63,7 +64,7 @@ export const ProjectCard = ({ project, sizes = '100vw' }: ProjectCardProps) => {
               pb: '3xs',
             })}
           >
-            {name}
+            {translationKey ? t(translationKey) : name}
           </h3>
           <p
             className={css({
@@ -72,7 +73,7 @@ export const ProjectCard = ({ project, sizes = '100vw' }: ProjectCardProps) => {
               fontSize: '1',
             })}
           >
-            {category}
+            {categoryTranslationKey ? t(categoryTranslationKey) : category}
           </p>
         </div>
       </div>

@@ -7,6 +7,7 @@ import { BackToLink } from '@/app/_components/back-to-link';
 import { PATHS } from '@/app/_utils/constants/paths.constants';
 import { ThemeImage } from '@/app/_components/theme-image';
 import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 
 interface Props {
   params: Promise<{
@@ -17,8 +18,11 @@ interface Props {
 
 export default async function ProjectPage({ params }: Props) {
   const { slug, locale } = await params;
-  const project = getProject(slug);
-  const projects = getProjects();
+  const [project, projects, t] = await Promise.all([
+    getProject(slug),
+    getProjects(),
+    getTranslations()
+  ]);
 
   if (!project) {
     notFound();
@@ -32,8 +36,10 @@ export default async function ProjectPage({ params }: Props) {
   return (
     <div className={stack({ gap: 'xl' })}>
       <div>
-        <BackToLink href={`/${locale}${PATHS.home}`}>Back to home</BackToLink>
-        <h1 className={css({ textStyle: 'heading' })}>{project.name}</h1>
+        <BackToLink href={`/${locale}${PATHS.home}`}>{t('navigation.back.gallery')}</BackToLink>
+        <h1 className={css({ textStyle: 'heading' })}>
+          {project.translationKey ? t(project.translationKey) : project.name}
+        </h1>
       </div>
       <div className={stack({ gap: 'xl' })}>
         {project.media.map((media, index) => (
@@ -49,7 +55,7 @@ export default async function ProjectPage({ params }: Props) {
             <ThemeImage
               src={media.url}
               darkSrc={media.darkUrl}
-              alt={`${project.name} - Image ${index + 1}`}
+              alt={`${project.translationKey ? t(project.translationKey) : project.name} - ${t('images.count', { count: index + 1 })}`}
               width={1920}
               height={1080}
               style={{ width: '100%', height: 'auto' }}
@@ -69,7 +75,7 @@ export default async function ProjectPage({ params }: Props) {
               _hover: { color: 'text1' },
             })}
           >
-            ← {prevProject.name}
+            ← {prevProject.translationKey ? t(prevProject.translationKey) : prevProject.name}
           </Link>
         ) : (
           <div />
@@ -83,7 +89,7 @@ export default async function ProjectPage({ params }: Props) {
               _hover: { color: 'text1' },
             })}
           >
-            {nextProject.name} →
+            {nextProject.translationKey ? t(nextProject.translationKey) : nextProject.name} →
           </Link>
         ) : (
           <div />

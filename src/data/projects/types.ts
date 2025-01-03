@@ -10,7 +10,9 @@ export interface Project {
   id: string;
   slug: string;
   name: string;
+  translationKey?: string;
   category: string;
+  categoryTranslationKey?: string;
   featured: boolean;
   featureMediaNarrow: ProjectMedia;
   featureMediaWide: ProjectMedia;
