@@ -55,9 +55,8 @@ const IntroductionSection = () => {
       <div className={stack({ gap: 'xs' })}>
         <h2
           className={css({ textStyle: 'base', color: 'text2', fontSize: '1' })}
-          aria-label="What I'm up to now"
         >
-          What is
+          Descripción
         </h2>
         <p className={css({ textStyle: 'base' })}>
           {t('description')}
