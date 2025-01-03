@@ -25,9 +25,9 @@ const getSerifFont = async () => {
   return data;
 };
 
-const DEFAULT_TITLE = 'San Vicente Black Barn';
-const DEFAULT_SUB =
-  'San Vicente Black Barn';
+const DEFAULT_TITLE = 'San Vicente';
+const DEFAULT_DESCRIPTION =
+  'San Vicente';
 
 export const ogTemplate = async ({
   title,
@@ -84,7 +84,7 @@ export const ogTemplate = async ({
                 fontStyle: 'normal',
               }}
             >
-              {sub ?? DEFAULT_SUB}
+              {sub ?? DEFAULT_DESCRIPTION}
             </p>
           </div>
         </div>

@@ -8,7 +8,7 @@ Pueblo San Vicente
 Black Barn, ubicada en Pueblo San Vicente, un hermoso pueblo costero de Uruguay.
 
 ### Descripción
-Experimente una estadía única en nuestra Black Barn, una joya arquitectónica moderna que combina la calidez de la madera con elegantes líneas contemporáneas. Ubicada en el tranquilo Pueblo San Vicente, donde el encanto rural de Uruguay se encuentra con la brisa costera, ofreciendo un refugio perfecto para conectar con la naturaleza sin comprometer la comodidad.
+Experimente una estadía única en nuestra casa, una joya arquitectónica moderna que combina la calidez de la madera con elegantes líneas contemporáneas. Ubicada en el tranquilo Pueblo San Vicente, donde el encanto rural de Uruguay se encuentra con la brisa costera, ofreciendo un refugio perfecto para conectar con la naturaleza sin comprometer la comodidad.
 
 ## WorkSection
 ### Título

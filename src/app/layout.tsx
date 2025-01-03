@@ -6,15 +6,15 @@ import { css } from 'ds/css';
 import { Analytics } from '@vercel/analytics/react';
 import { PATHS } from '@/app/_utils/constants/paths.constants';
 
-const title = 'San Vicente | Black Barn Home';
+const title = 'San Vicente';
 const description =
-  'San Vicente Black Barn';
+  'San Vicente';
 
 export const metadata: Metadata = {
   metadataBase: new URL(PATHS.base),
   robots: 'follow, index',
   title: {
-    template: '%s | San Vicente Black Barn',
+    template: '%s | San Vicente',
     default: title,
   },
   description,
