@@ -35,6 +35,11 @@
   },
   "house": {
     "title": "House",
+    "navigation": {
+      "back": {
+        "gallery": "Back home"
+      }
+    },
     "fauna": {
       "title": "Fauna",
       "description1": "Living in the countryside means sharing space with nature harmoniously.",

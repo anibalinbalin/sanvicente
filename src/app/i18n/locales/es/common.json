@@ -35,6 +35,11 @@
   },
   "house": {
     "title": "Casa",
+    "navigation": {
+      "back": {
+        "gallery": "Volver"
+      }
+    },
     "fauna": {
       "title": "Fauna",
       "description1": "Vivir en el campo significa compartir el espacio con la naturaleza de manera armoniosa.",
