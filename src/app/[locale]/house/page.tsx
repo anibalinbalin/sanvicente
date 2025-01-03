@@ -17,7 +17,7 @@ const title = 'House';
 const description = 'House page';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const url = new URL(`${PATHS.base}${PATHS.house(params.locale)}`);
+  const url = new URL(`${PATHS.base}/${params.locale}${PATHS.house}`);
 
   return {
     title,
@@ -46,7 +46,7 @@ export default async function HousePage({
 }: Props) {
   const t = await getTranslations('house');
   const currentLocale = await getLocale();
-  const galleryPath = PATHS.gallery(currentLocale);
+  const homePath = `/${currentLocale}${PATHS.home}`;
 
   return (
     <div>
@@ -54,7 +54,7 @@ export default async function HousePage({
         <h1>{t('title')}</h1>
       </VisuallyHiddenRoot>
       <div className={stack({ gap: '3xl' })}>
-        <BackToLink href={galleryPath}>Back to home</BackToLink>
+        <BackToLink href={homePath}>Back to home</BackToLink>
 
         <section className={stack({ gap: 'm' })}>
           <h2 className={css({ textStyle: 'base', lineHeight: 'tight', color: 'text2', fontSize: '1' })}>
@@ -73,9 +73,7 @@ export default async function HousePage({
             {t('flora.title')}
           </h2>
           <div className={stack({ gap: 's' })}>
-            <p className={css({ textStyle: 'body' })}>{t('flora.description1')}</p>
-            <p className={css({ textStyle: 'body' })}>{t('flora.description2')}</p>
-            <p className={css({ textStyle: 'body' })}>{t('flora.description3')}</p>
+            <p className={css({ textStyle: 'body' })}>{t('flora.description')}</p>
           </div>
         </section>
 
@@ -120,10 +118,11 @@ export default async function HousePage({
               <p className={css({ textStyle: 'body' })}>{t('kitchen.oven.description')}</p>
               <div className={css({ position: 'relative', width: '100%', height: '300px' })}>
                 <Image
-                  src="/assets/house/owen.png"
+                  src="/assets/house/owen.webp"
                   alt={t('kitchen.oven.title')}
                   fill
                   style={{ objectFit: 'contain' }}
+                  quality={85}
                 />
               </div>
             </div>
@@ -139,10 +138,11 @@ export default async function HousePage({
               </ol>
               <div className={css({ position: 'relative', width: '100%', height: '300px' })}>
                 <Image
-                  src="/assets/house/cooktop.png"
+                  src="/assets/house/cooktop.webp"
                   alt={t('kitchen.cooktop.title')}
                   fill
                   style={{ objectFit: 'contain' }}
+                  quality={85}
                 />
               </div>
             </div>
