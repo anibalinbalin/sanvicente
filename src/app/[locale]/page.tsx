@@ -68,16 +68,12 @@ const IntroductionSection = () => {
 
 const WorkSection = ({ children }: { children?: React.ReactNode }) => {
   const t = useTranslations('home.gallery');
-  const locale = useLocale();
   
   return (
     <section id="gallery" className={stack({ gap: 's' })}>
-      <div className={flex({ justify: 'space-between', align: 'center' })}>
-        <h2 className={css({ textStyle: 'base', lineHeight: 'tight' })}>
-          {t('title')}
-        </h2>
-        <ArrowLink href={`/${locale}${PATHS.images}`}>{t('viewAll')}</ArrowLink>
-      </div>
+      <h2 className={css({ textStyle: 'base', lineHeight: 'tight' })}>
+        {t('title')}
+      </h2>
       {children}
     </section>
   );
