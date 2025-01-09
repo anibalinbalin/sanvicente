@@ -67,13 +67,15 @@ export const projects: Project[] = [
     featured: true,
     featureMediaNarrow: {
       id: '5',
-      url: '/assets/images/Bedroom_1/dorm1_IMG_8401.webp',
+      url: '/assets/images/Bedroom_1/bath1_IMG_8483.webp',
+      darkUrl: '/assets/images_night/Bedroom_1/night_bathroom_IMG_8452.webp',
       width: 1920,
       height: 1080
     },
     featureMediaWide: {
       id: '6',
-      url: '/assets/images/Bedroom_1/dorm1_IMG_7956.webp',
+      url: '/assets/images/Bedroom_1/dorm1_IMG_8400.webp',
+      darkUrl: '/assets/images_night/Bedroom_1/night_bathroom_IMG_8454.webp',
       width: 1920,
       height: 1080
     },
@@ -211,8 +213,8 @@ export const projects: Project[] = [
     },
     featureMediaWide: {
       id: '13',
-      url: '/assets/images/Bedroom_3/dorm3_IMG_8485.webp',
-      darkUrl: '/assets/images_night/Bedroom_3/dorm3_IMG_8512.webp',
+      url: '/assets/images/Bedroom_3/dorm3_IMG_8489.webp',
+      darkUrl: '/assets/images_night/Bedroom_3/dorm3_IMG_8513.webp',
       width: 1920,
       height: 1080
     },
