@@ -22,7 +22,13 @@ export const ThemeImage = ({ src, darkSrc, ...props }: ThemeImageProps) => {
   }
 
   const isDark = theme === 'dark' || resolvedTheme === 'dark';
-  const imageSrc = isDark && darkSrc ? darkSrc : src;
+  
+  // Don't render anything if we're in dark mode and there's no dark image
+  if (isDark && !darkSrc) {
+    return null;
+  }
+
+  const imageSrc = isDark ? darkSrc! : src;
 
   return (
     <Image

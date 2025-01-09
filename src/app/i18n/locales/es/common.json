@@ -55,14 +55,14 @@
       "title": "Tecnología",
       "wifi": {
         "title": "WiFi",
-        "description": "Dos dos redes WiFi:",
+        "description": "Dos redes WiFi:",
         "networks": "2.4GHz y 5GHz",
         "password": "Contraseña para ambas: antonpirulero",
         "note": "Como regla general las redes de 5ghz son mas rapidas que las 2.4ghz pero estas ultimas tienen más alcance en funcion de una velocidad menor a la primera."
       },
       "audio": {
         "title": "Sistema de Audio",
-        "description": "La casa cuenta con sistema Sonos compatible con AirPlay. Al conectarse al WiFi, pueden seleccionar \"Sala de estar\" para reproducir música (por ejemplo, desde Spotify). En el dormitorio encontrarán otro parlante AirPlay llamado \"Libratone\"."
+        "description": "La casa cuenta con sistema Sonos compatible con AirPlay. Al conectarse al WiFi, pueden seleccionar \"Sala de estar\" para pasar música (por ejemplo, desde Spotify). En el dormitorio hay otro parlante AirPlay llamado \"Libratone\"."
       }
     },
     "kitchen": {
@@ -73,15 +73,15 @@
       },
       "oven": {
         "title": "Horno",
-        "description": "Para evitar adivinar que función hace qué, sugerimos para la gran mayoría seleccionar la función que calienta arriba y abajo con ventilador."
+        "description": "Para evitar adivinar que función hace qué simplemente para la gran mayoría de las cocciones seleccionar la función que calienta arriba y abajo con ventilador."
       },
       "cooktop": {
         "title": "Cooktop",
         "description": "El encendido requiere tres pasos:",
         "steps": {
-          "1": "Encenderlo",
-          "2": "Seleccionar la hornalla",
-          "3": "Elegir la temperatura"
+          "1": "• Encenderlo",
+          "2": "• Seleccionar la hornalla",
+          "3": "• Elegir la temperatura"
         }
       }
     },

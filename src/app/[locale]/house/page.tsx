@@ -8,7 +8,6 @@ import Image from 'next/image';
 import { BackToLink } from '@/app/_components/back-to-link';
 import { getTranslations, getLocale } from 'next-intl/server';
 import { locales } from '@/app/i18n/config';
-import { PasswordInput } from '@/app/_components/password-input';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -89,10 +88,7 @@ export default async function HousePage({
               </h3>
               <p className={css({ textStyle: 'body' })}>{t('technology.wifi.description')}</p>
               <p className={css({ textStyle: 'body' })}>{t('technology.wifi.networks')}</p>
-              <PasswordInput 
-                label={t('technology.wifi.password')} 
-                value="antonpirulero" 
-              />
+              <p className={css({ textStyle: 'body' })}>{t('technology.wifi.password')}</p>
               <p className={css({ textStyle: 'body' })}>{t('technology.wifi.note')}</p>
             </div>
             <div className={stack({ gap: 's' })}>
