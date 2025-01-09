@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { BackToLink } from '@/app/_components/back-to-link';
 import { getTranslations, getLocale } from 'next-intl/server';
 import { locales } from '@/app/i18n/config';
+import { TechnologySection } from '@/components/sections/technology-section';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -77,28 +78,15 @@ export default async function HousePage({
           </div>
         </section>
 
-        <section className={stack({ gap: 'm' })}>
-          <h2 className={css({ textStyle: 'base', lineHeight: 'tight', color: 'text2', fontSize: '1' })}>
-            {t('technology.title')}
-          </h2>
-          <div className={stack({ gap: 'l' })}>
-            <div className={stack({ gap: 's' })}>
-              <h3 className={css({ textStyle: 'base', fontSize: '1', lineHeight: 'tight' })}>
-                {t('technology.wifi.title')}
-              </h3>
-              <p className={css({ textStyle: 'body' })}>{t('technology.wifi.description')}</p>
-              <p className={css({ textStyle: 'body' })}>{t('technology.wifi.networks')}</p>
-              <p className={css({ textStyle: 'body' })}>{t('technology.wifi.password')}</p>
-              <p className={css({ textStyle: 'body' })}>{t('technology.wifi.note')}</p>
-            </div>
-            <div className={stack({ gap: 's' })}>
-              <h3 className={css({ textStyle: 'base', fontSize: '1', lineHeight: 'tight' })}>
-                {t('technology.audio.title')}
-              </h3>
-              <p className={css({ textStyle: 'body' })}>{t('technology.audio.description')}</p>
-            </div>
-          </div>
-        </section>
+        <TechnologySection 
+          title={t('technology.title')}
+          wifiTitle={t('technology.wifi.title')}
+          wifiDescription={t('technology.wifi.description')}
+          wifiNetworks={t('technology.wifi.networks')}
+          wifiNote={t('technology.wifi.note')}
+          audioTitle={t('technology.audio.title')}
+          audioDescription={t('technology.audio.description')}
+        />
 
         <section className={stack({ gap: 'm' })}>
           <h2 className={css({ textStyle: 'base', lineHeight: 'tight', color: 'text2', fontSize: '1' })}>
