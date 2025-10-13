@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { GoogleMap, useLoadScript } from '@react-google-maps/api';
+import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 import { css } from 'ds/css';
 
 const containerStyle = {
@@ -33,17 +33,28 @@ const MapComponent = () => {
 
   return (
     <div className={css({ w: 'full', bgColor: 'slate8', rounded: 'card', overflow: 'hidden', position: 'relative', zIndex: 1 })}>
+      <style>{`
+        .gm-style-cc,
+        .gm-style a[href^="https://maps.google.com/maps"],
+        .gmnoprint,
+        a[href^="https://maps.google.com/maps"],
+        .gm-style-cc + div,
+        .gm-bundled-control {
+          display: none !important;
+        }
+      `}</style>
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
         zoom={15}
         options={{
-          zoomControl: true,
-          mapTypeControl: false,
-          streetViewControl: false,
-          fullscreenControl: false
+          disableDefaultUI: true,
+          zoomControl: false,
+          gestureHandling: 'cooperative',
+          keyboardShortcuts: false
         }}
       >
+        <Marker position={center} />
       </GoogleMap>
     </div>
   );
