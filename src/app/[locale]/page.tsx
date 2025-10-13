@@ -166,7 +166,7 @@ const ConnectLinkListItem = ({
   children,
 }: React.PropsWithChildren<ConnectLinkListItemProps>) => {
   return (
-    <li className={grid({ columns: 3, alignItems: 'center', gap: 's' })}>
+    <li className={css({ display: 'flex', gap: 's', alignItems: 'center', flexWrap: 'wrap' })}>
       <h3
         className={css({
           textStyle: 'base',
@@ -176,9 +176,7 @@ const ConnectLinkListItem = ({
       >
         {label}
       </h3>
-      <div style={{ gridColumn: '2 / span 2' }}>
-        <div>{children}</div>
-      </div>
+      <div>{children}</div>
     </li>
   );
 };
