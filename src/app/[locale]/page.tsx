@@ -58,7 +58,7 @@ const IntroductionSection = () => {
         >
           Descripción
         </h2>
-        <p className={css({ textStyle: 'base' })}>
+        <p className={css({ textStyle: 'base', whiteSpace: 'pre-line' })}>
           {t('description')}
         </p>
       </div>
