@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, useLoadScript } from '@react-google-maps/api';
 import { css } from 'ds/css';
 
 const containerStyle = {
@@ -33,9 +33,9 @@ const MapComponent = () => {
 
   return (
     <div className={css({ w: 'full', bgColor: 'slate8', rounded: 'card', overflow: 'hidden', position: 'relative', zIndex: 1 })}>
-      <GoogleMap 
-        mapContainerStyle={containerStyle} 
-        center={center} 
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
         zoom={15}
         options={{
           zoomControl: true,
@@ -44,7 +44,6 @@ const MapComponent = () => {
           fullscreenControl: false
         }}
       >
-        <Marker position={center} />
       </GoogleMap>
     </div>
   );

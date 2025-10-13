@@ -3,8 +3,8 @@
     "title": "Inicio",
     "introduction": {
       "title": "Pueblo San Vicente",
-      "subtitle": "La casa esta ubicada en Maldonado, Uruguay.",
-      "description": "La casa es de estilo nordico. Esta ubicada en Pueblo San Vicente, entre la barra y José Ignacio. Entre el campo y el océano.\nCuenta con 150 metros cuadrados, 3 dormitorios, 2 baños y un toilette. Cocina integrada al living. Fue diseñada para estar integrada a sus espacios verdes la cual la hace muy disfrutable."
+      "subtitle": "Maldonado, Uruguay.",
+      "description": "La casa es de estilo nordico. Esta ubicada en Pueblo San Vicente, entre la barra y José Ignacio. Entre el campo y el océano.\nCuenta con 150 metros cuadrados, 3 dormitorios, 2 baños y un toilette. Cocina integrada al living. Fue diseñada para estar integrada a sus espacios verdes y maximizar el contacto con la naturaleza. El frente y parte trasera se abren en su totalidad dejando un espacio libre y permitiendo paz y descanzo."
     },
     "gallery": {
       "title": "Fotos",
@@ -12,7 +12,7 @@
     },
     "connect": {
       "title": "Contacto",
-      "subtitle": "Para consultas sobre disponibilidad y reservas, contáctenos:",
+      "subtitle": "Para consultas sobre disponibilidad:",
       "links": {
         "whatsapp": "WhatsApp",
         "email": "Email",
