@@ -28,7 +28,7 @@ const Time = () => {
       className={css({ textStyle: 'base', lineHeight: 'tight', fontSize: '1' })}
       dateTime={currentTime.twentyFour}
     >
-      {currentTime.pretty}
+      {currentTime.twentyFour}
     </time>
   );
 };
