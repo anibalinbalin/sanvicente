@@ -1,0 +1,112 @@
+{
+  "home": {
+    "title": "Inicio",
+    "introduction": {
+      "title": "Pueblo San Vicente",
+      "subtitle": "Nuestra casa esta ubicada en Pueblo San Vicente, un hermoso pueblo costero en Uruguay.",
+      "description": "La casa es de estilo nordico. Esta ubicada en Pueblo San Vicente, entre la barra y José Ignacio. Entre el campo y el oceano."
+    },
+    "gallery": {
+      "title": "Fotos",
+      "viewAll": "ver todas"
+    },
+    "connect": {
+      "title": "Contacto",
+      "subtitle": "Para consultas sobre disponibilidad y reservas, contáctenos:",
+      "links": {
+        "whatsapp": "WhatsApp",
+        "email": "Email",
+        "houseTips": "Consejos de la casa"
+      }
+    }
+  },
+  "projects": {
+    "dining_area": "Comedor",
+    "bedroom_1": "Dormitorio 1",
+    "bedroom_2": "Dormitorio 2",
+    "bedroom_3": "Dormitorio 3",
+    "exterior": "Exterior",
+    "additional": "Fotos extras",
+    "categories": {
+      "interior": "Interior",
+      "exterior": "Exterior",
+      "additional": "Extras"
+    }
+  },
+  "house": {
+    "title": "Casa",
+    "navigation": {
+      "back": {
+        "gallery": "Volver"
+      }
+    },
+    "fauna": {
+      "title": "Fauna",
+      "description1": "Vivir en el campo significa compartir el espacio con la naturaleza.",
+      "description2": "Es frecuente que una gatita negra visite la casa como también algún que otro pájaro que aprovecha los ventanales abiertos para curiosear dentro de la misma."
+    },
+    "flora": {
+      "title": "Flora",
+      "description": "El jardín es autosuficiente y recibe mantenimiento semanal por parte de Christian, el jardinero."
+    },
+    "technology": {
+      "title": "Tecnología",
+      "wifi": {
+        "title": "WiFi",
+        "description": "Dos redes WiFi:",
+        "networks": "2.4GHz y 5GHz",
+        "password": "Contraseña para ambas: antonpirulero"
+      },
+      "audio": {
+        "title": "Sistema de Audio",
+        "description": "La casa cuenta con sistema Sonos que funciona con AirPlay. Al conectarse al WiFi, pueden seleccionar \"Sala de estar\" para utilizarlos.\nEn el dormitorio principal hay otro parlante AirPlay llamado \"Libratone\"."
+      }
+    },
+    "kitchen": {
+      "title": "Cocina",
+      "extractor": {
+        "title": "Extractor",
+        "description": "Se activa automáticamente al tirar la bandeja hacia afuera y se apaga al empujarla hacia atrás."
+      },
+      "oven": {
+        "title": "Horno",
+        "description": "La función que se usa el 99% de las veces es la marcada en la imagen debajo. Ventilador con temperatura."
+      },
+      "cooktop": {
+        "title": "Cooktop",
+        "description": "El encendido requiere tres pasos:",
+        "steps": {
+          "1": "• Encenderlo",
+          "2": "• Seleccionar la hornalla",
+          "3": "• Elegir la temperatura"
+        }
+      }
+    },
+    "laundry": {
+      "title": "Lavadero",
+      "washer": {
+        "title": "Lavadora",
+        "description": "La función más practica es la \"Rápido\" de 30 minutos con centrifugado a 1200 rpm."
+      },
+      "dryer": {
+        "title": "Secadora",
+        "description": "La opción más conveniente es la primera en sentido horario: \"Extra seco, listo para guardar\"."
+      }
+    }
+  },
+  "navigation": {
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "back": {
+      "gallery": "Volver"
+    }
+  },
+  "notFound": {
+    "title": "404 - No encontrado",
+    "description": "No se pudo encontrar la página solicitada",
+    "returnHome": "Volver al inicio"
+  },
+  "images": {
+    "count": "{count} fotos"
+  }
+} 
