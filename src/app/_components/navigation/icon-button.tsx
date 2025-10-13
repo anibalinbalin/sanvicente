@@ -4,6 +4,7 @@ import { circle, grid } from 'ds/patterns';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { ICON_SVG_COMPONENTS, Theme } from './icon-components';
+import { setManualMode } from '@/app/_hooks/useAutoTheme';
 
 interface IconButtonProps {
   icon: Theme;
@@ -28,7 +29,10 @@ const IconButton = ({ icon }: IconButtonProps) => {
       <button
         className={cx(circle({ size: 15 }), iconButton({ isActive }))}
         aria-label={`Change to ${buttonLabel}`}
-        onClick={() => setTheme(icon)}
+        onClick={() => {
+          setManualMode();
+          setTheme(icon);
+        }}
       >
         <Icon />
       </button>

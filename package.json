@@ -42,6 +42,7 @@
     "reading-time": "^1.5.0",
     "rehype-pretty-code": "^0.10.0",
     "sharp": "^0.32.6",
+    "suncalc": "^1.9.0",
     "tailwind-merge": "^2.6.0",
     "zod": "^3.21.4"
   },
@@ -50,6 +51,7 @@
     "@types/body-scroll-lock": "^3.1.0",
     "@types/node": "^20.3.3",
     "@types/react": "18.2.14",
+    "@types/suncalc": "^1.9.2",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
     "concurrently": "^8.2.0",
