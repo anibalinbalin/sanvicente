@@ -12,7 +12,6 @@ import { ProjectCard } from '@/app/_components/project-card';
 import { useTranslations } from 'next-intl';
 import { MapClientWrapper } from '@/app/_components/map-client-wrapper';
 import { useLocale } from 'next-intl';
-import { ThemeImage } from '@/app/_components/theme-image';
 
 export default function Home() {
   const t = useTranslations('home');
@@ -24,7 +23,6 @@ export default function Home() {
       </VisuallyHiddenRoot>
       <div className={stack({ gap: '3xl' })}>
         <IntroductionSection />
-        <PlanosSection />
         <WorkSection>
           <ProjectGrid />
         </WorkSection>
@@ -63,29 +61,6 @@ const IntroductionSection = () => {
         <p className={css({ textStyle: 'base', whiteSpace: 'pre-line' })}>
           {t('description')}
         </p>
-      </div>
-    </section>
-  );
-};
-
-const PlanosSection = () => {
-  const t = useTranslations('home.planos');
-
-  return (
-    <section className={stack({ gap: 's' })}>
-      <h2 className={css({ textStyle: 'base', lineHeight: 'tight' })}>
-        {t('title')}
-      </h2>
-      <div className={css({ position: 'relative', width: '100%', height: 'auto', overflow: 'hidden', rounded: 'card' })}>
-        <ThemeImage
-          src="/images/planos/plano_light.jpg"
-          darkSrc="/images/planos/plano_dark.jpg"
-          alt="Floor plan"
-          width={1200}
-          height={800}
-          style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
-          quality={85}
-        />
       </div>
     </section>
   );
@@ -175,6 +150,9 @@ const ConnectSection = () => {
           </ConnectLinkListItem>
           <ConnectListLink href={`/${locale}${PATHS.house}`}>
             {t('links.houseTips')}
+          </ConnectListLink>
+          <ConnectListLink href={`/${locale}${PATHS.planos}`}>
+            {t('links.planos')}
           </ConnectListLink>
         </ul>
       </div>
