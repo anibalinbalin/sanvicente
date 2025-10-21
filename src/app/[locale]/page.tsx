@@ -163,6 +163,9 @@ const ConnectSection = () => {
           <ConnectListLink href={`/${locale}${PATHS.house}`}>
             {t('links.houseTips')}
           </ConnectListLink>
+          <ConnectListLink href={`/${locale}${PATHS.amenities}`}>
+            {t('links.amenities')}
+          </ConnectListLink>
           <ConnectListLink href={`/${locale}${PATHS.planos}`}>
             {t('links.planos')}
           </ConnectListLink>

@@ -19,7 +19,9 @@
       "links": {
         "whatsapp": "WhatsApp",
         "email": "Email",
-        "houseTips": "House Tips"
+        "houseTips": "House Tips",
+        "amenities": "Amenities",
+        "planos": "Floor Plans"
       }
     }
   },
@@ -114,5 +116,8 @@
   },
   "images": {
     "count": "{count} photos"
+  },
+  "amenities": {
+    "title": "Amenities"
   }
 } 

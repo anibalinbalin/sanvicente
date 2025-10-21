@@ -11,6 +11,7 @@ export const PATHS = {
   images: '/images',
   all: '/all',
   house: '/house',
+  amenities: '/amenities',
   planos: '/planos',
   gallery: '#gallery',
   project: (slug: string, id?: string) => id ? `/images/${slug}/${id}` : `/images/${slug}`
