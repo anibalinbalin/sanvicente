@@ -6,9 +6,9 @@ import { css } from 'ds/css';
 import { Analytics } from '@vercel/analytics/react';
 import { PATHS } from '@/app/_utils/constants/paths.constants';
 
-const defaultTitle = 'San Vicente House | Alquiler casa verano 2026 en José Ignacio';
+const defaultTitle = 'Alquiler Casa San Vicente 2026 | José Ignacio, Uruguay';
 const description =
-  'Casa de alquiler temporal en Pueblo San Vicente, a minutos de José Ignacio y Manantiales. Espacios abiertos, 3 dormitorios y jardines rodeados de naturaleza para disfrutar el verano 2026.';
+  'Alquiler casa San Vicente 2026 cerca de José Ignacio y Manantiales. Casa de estilo nórdico con 3 dormitorios, espacios abiertos y jardines. Ideal para vacaciones de verano en Uruguay.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(PATHS.base),
@@ -23,6 +23,8 @@ export const metadata: Metadata = {
   description,
   keywords: [
     'alquiler casa jose ignacio',
+    'alquiler casa jose ignacio 2026',
+    'alquiler casa san vicente 2026',
     'alquiler casa manantiales',
     'alquiler casa la barra',
     'alquiler verano 2026',
