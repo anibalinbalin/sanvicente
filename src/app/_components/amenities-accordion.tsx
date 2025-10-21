@@ -72,9 +72,6 @@ export const AmenitiesAccordion = () => {
           textStyle: 'base',
           fontSize: '1',
           lineHeight: 'tight',
-          color: 'slate12',
-          textDecoration: 'underline',
-          textUnderlineOffset: '2px',
           _hover: {
             color: 'slate11',
           },
