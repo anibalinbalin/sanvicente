@@ -4,7 +4,8 @@
     "introduction": {
       "title": "Pueblo San Vicente",
       "subtitle": "Our house is located in Pueblo San Vicente, a beautiful coastal town in Uruguay.",
-      "description": "Experience a unique stay in our modern Nordic-style house that combines the warmth of wood with contemporary lines. Nestled in the peaceful Pueblo San Vicente, where Uruguay's rural charm meets coastal breeze, offering a perfect retreat to connect with nature without compromising on comfort."
+      "description": "Experience a unique stay in our modern Nordic-style house that combines the warmth of wood with contemporary lines. Nestled in the peaceful Pueblo San Vicente, between La Barra and José Ignacio, just 8 minutes from Manantiales beach.\n\nAvailable for summer 2026 rental. Located where Uruguay's rural charm meets coastal breeze, offering a perfect retreat to connect with nature without compromising on comfort.",
+      "mapCaption": "An 8 min drive from José Ignacio and 8 minutes from Manantiales"
     },
     "planos": {
       "title": "Floor Plans"
@@ -117,6 +118,53 @@
     "count": "{count} photos"
   },
   "amenities": {
-    "title": "Amenities"
+    "title": "Amenities",
+    "list": [
+      { "id": "barbecue_utensils", "name": "Barbecue utensils" },
+      { "id": "bbq_grill", "name": "BBQ grill" },
+      { "id": "beach_access", "name": "Beach access" },
+      { "id": "bed_linens", "name": "Bed linens" },
+      { "id": "bidet", "name": "Bidet" },
+      { "id": "blender", "name": "Blender" },
+      { "id": "books_and_reading_material", "name": "Books and reading material" },
+      { "id": "clothing_storage", "name": "Clothing storage" },
+      { "id": "cooking_basics", "name": "Cooking basics" },
+      { "id": "crib", "name": "Crib" },
+      { "id": "dedicated_workspace", "name": "Dedicated workspace" },
+      { "id": "dining_table", "name": "Dining table" },
+      { "id": "dishes_and_silverware", "name": "Dishes and silverware" },
+      { "id": "drying_rack_for_clothing", "name": "Drying rack for clothing" },
+      { "id": "ethernet_connection", "name": "Ethernet connection" },
+      { "id": "exercise_equipment", "name": "Exercise equipment" },
+      { "id": "extra_pillows_and_blankets", "name": "Extra pillows and blankets" },
+      { "id": "fire_pit", "name": "Fire pit" },
+      { "id": "free_parking_on_premises", "name": "Free parking on premises" },
+      { "id": "freezer", "name": "Freezer" },
+      { "id": "gym", "name": "Gym" },
+      { "id": "hair_dryer", "name": "Hair dryer" },
+      { "id": "hangers", "name": "Hangers" },
+      { "id": "heating", "name": "Heating" },
+      { "id": "high_chair", "name": "High chair" },
+      { "id": "hot_water", "name": "Hot water" },
+      { "id": "hot_water_kettle", "name": "Hot water kettle" },
+      { "id": "indoor_fireplace", "name": "Indoor fireplace" },
+      { "id": "iron", "name": "Iron" },
+      { "id": "kitchen", "name": "Kitchen" },
+      { "id": "kitchenette", "name": "Kitchenette" },
+      { "id": "laundromat_nearby", "name": "Laundromat nearby" },
+      { "id": "mosquito_net", "name": "Mosquito net" },
+      { "id": "outdoor_dining_area", "name": "Outdoor dining area" },
+      { "id": "outdoor_furniture", "name": "Outdoor furniture" },
+      { "id": "outdoor_kitchen", "name": "Outdoor kitchen" },
+      { "id": "outdoor_playground", "name": "Outdoor playground" },
+      { "id": "oven", "name": "Oven" },
+      { "id": "refrigerator", "name": "Refrigerator" },
+      { "id": "room_darkening_shades", "name": "Room-darkening shades" },
+      { "id": "shower_gel", "name": "Shower gel" },
+      { "id": "tv", "name": "TV" },
+      { "id": "washer", "name": "Washer" },
+      { "id": "wifi", "name": "Wifi" },
+      { "id": "wine_glasses", "name": "Wine glasses" }
+    ]
   }
 } 

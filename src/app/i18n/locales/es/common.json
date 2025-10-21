@@ -4,7 +4,8 @@
     "introduction": {
       "title": "Pueblo San Vicente",
       "subtitle": "Maldonado, Uruguay.",
-      "description": "La casa es de estilo nordico. Esta ubicada en Pueblo San Vicente, entre la barra y José Ignacio. Entre el campo y el océano.\nCuenta con 150 metros cuadrados, 3 dormitorios, 2 baños y un toilette. Cocina integrada al living.\n\nFue diseñada para estar integrada a sus espacios verdes y maximizar el contacto con la naturaleza.\nEl frente y parte trasera se abren en su totalidad dejando un espacio libre entre ambos jardines."
+      "description": "La casa es de estilo nordico. Esta ubicada en Pueblo San Vicente, entre La Barra y José Ignacio, a solo 8 minutos de las playas de Manantiales. Entre el campo y el océano.\n\nIdeal para alquiler de verano 2026. Cuenta con 150 metros cuadrados, 3 dormitorios, 2 baños y un toilette. Cocina integrada al living.\n\nFue diseñada para estar integrada a sus espacios verdes y maximizar el contacto con la naturaleza.\nEl frente y parte trasera se abren en su totalidad dejando un espacio libre entre ambos jardines.",
+      "mapCaption": "A 8 minutos en auto de José Ignacio y 8 minutos de Manantiales"
     },
     "planos": {
       "title": "Planos"
@@ -114,6 +115,53 @@
     "count": "{count} fotos"
   },
   "amenities": {
-    "title": "Amenidades"
+    "title": "Amenidades",
+    "list": [
+      { "id": "barbecue_utensils", "name": "Utensilios de barbacoa" },
+      { "id": "bbq_grill", "name": "Parrilla" },
+      { "id": "beach_access", "name": "Acceso a la playa" },
+      { "id": "bed_linens", "name": "Ropa de cama" },
+      { "id": "bidet", "name": "Bidé" },
+      { "id": "blender", "name": "Licuadora" },
+      { "id": "books_and_reading_material", "name": "Libros y material de lectura" },
+      { "id": "clothing_storage", "name": "Almacenamiento de ropa" },
+      { "id": "cooking_basics", "name": "Elementos básicos de cocina" },
+      { "id": "crib", "name": "Cuna" },
+      { "id": "dedicated_workspace", "name": "Espacio de trabajo dedicado" },
+      { "id": "dining_table", "name": "Mesa de comedor" },
+      { "id": "dishes_and_silverware", "name": "Platos y cubiertos" },
+      { "id": "drying_rack_for_clothing", "name": "Tendedero para ropa" },
+      { "id": "ethernet_connection", "name": "Conexión Ethernet" },
+      { "id": "exercise_equipment", "name": "Equipo de ejercicio" },
+      { "id": "extra_pillows_and_blankets", "name": "Almohadas y mantas adicionales" },
+      { "id": "fire_pit", "name": "Fogón" },
+      { "id": "free_parking_on_premises", "name": "Estacionamiento gratuito en el lugar" },
+      { "id": "freezer", "name": "Congelador" },
+      { "id": "gym", "name": "Gimnasio" },
+      { "id": "hair_dryer", "name": "Secador de pelo" },
+      { "id": "hangers", "name": "Perchas" },
+      { "id": "heating", "name": "Calefacción" },
+      { "id": "high_chair", "name": "Silla alta" },
+      { "id": "hot_water", "name": "Agua caliente" },
+      { "id": "hot_water_kettle", "name": "Hervidor de agua" },
+      { "id": "indoor_fireplace", "name": "Chimenea interior" },
+      { "id": "iron", "name": "Plancha" },
+      { "id": "kitchen", "name": "Cocina" },
+      { "id": "kitchenette", "name": "Cocineta" },
+      { "id": "laundromat_nearby", "name": "Lavandería cercana" },
+      { "id": "mosquito_net", "name": "Mosquitero" },
+      { "id": "outdoor_dining_area", "name": "Comedor al aire libre" },
+      { "id": "outdoor_furniture", "name": "Muebles de exterior" },
+      { "id": "outdoor_kitchen", "name": "Cocina al aire libre" },
+      { "id": "outdoor_playground", "name": "Parque infantil al aire libre" },
+      { "id": "oven", "name": "Horno" },
+      { "id": "refrigerator", "name": "Heladera" },
+      { "id": "room_darkening_shades", "name": "Cortinas opacas" },
+      { "id": "shower_gel", "name": "Gel de ducha" },
+      { "id": "tv", "name": "TV" },
+      { "id": "washer", "name": "Lavadora" },
+      { "id": "wifi", "name": "WiFi" },
+      { "id": "wine_glasses", "name": "Copas de vino" }
+    ]
   }
 } 

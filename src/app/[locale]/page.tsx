@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { VisuallyHiddenRoot } from '@/app/_components/visually-hidden';
-import { flex, grid, hstack, stack } from 'ds/patterns';
+import { grid, hstack, stack } from 'ds/patterns';
 import { css, cx } from 'ds/css';
 import Link from 'next/link';
 import { link } from 'ds/recipes';
@@ -45,7 +45,7 @@ const IntroductionSection = () => {
             textStyle: 'serif',
             lineHeight: 'tight',
           })}
-          aria-label='Pueblo San Vicente Introduction'
+          aria-label='Introducción a Casa San Vicente'
         >
           {t('title')}
         </h2>
@@ -73,7 +73,7 @@ const IntroductionSection = () => {
             fontSize: '1',
           })}
         >
-          A 8 min drive from José Ignacio and 8 minutes from Manantiales
+          {t('mapCaption')}
         </figcaption>
       </figure>
       <div className={stack({ gap: 'xs' })}>
@@ -163,7 +163,7 @@ const ConnectSection = () => {
         </p>
         <ul className={stack({ gap: 's' })}>
           <ConnectLinkListItem label={t('links.whatsapp')}>
-            <ConnectListLink href={PATHS.twitter}>
+            <ConnectListLink href={PATHS.whatsapp}>
               +598 99108220
             </ConnectListLink>
           </ConnectLinkListItem>
@@ -172,13 +172,27 @@ const ConnectSection = () => {
               laurafuentesaro@gmail.com
             </ConnectListLink>
           </ConnectLinkListItem>
-          <ConnectListLink href={`/${locale}${PATHS.house}`}>
-            {t('links.houseTips')}
-          </ConnectListLink>
+          <li
+            className={css({
+              display: 'flex',
+              gap: 's',
+            })}
+          >
+            <ConnectListLink href={`/${locale}${PATHS.house}`}>
+              {t('links.houseTips')}
+            </ConnectListLink>
+          </li>
           <AmenitiesAccordion />
-          <ConnectListLink href={`/${locale}${PATHS.planos}`}>
-            {t('links.planos')}
-          </ConnectListLink>
+          <li
+            className={css({
+              display: 'flex',
+              gap: 's',
+            })}
+          >
+            <ConnectListLink href={`/${locale}${PATHS.planos}`}>
+              {t('links.planos')}
+            </ConnectListLink>
+          </li>
         </ul>
       </div>
     </section>
@@ -213,16 +227,33 @@ const ConnectListLink = ({
   href,
   children,
 }: React.PropsWithChildren<{ href: string }>) => {
+  const isExternal = href.startsWith('mailto:') ||
+                     href.startsWith('tel:') ||
+                     href.startsWith('http:') ||
+                     href.startsWith('https:');
+
+  const className = cx(
+    link({
+      color: 'secondary',
+    }),
+    css({ display: 'inline-block', lineHeight: 'tight', fontSize: '1' }),
+  );
+
+  if (isExternal) {
+    return (
+      <a
+        className={className}
+        href={href}
+        target={href.startsWith('mailto:') ? undefined : '_blank'}
+        rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <Link
-      className={cx(
-        link({
-          color: 'secondary',
-        }),
-        css({ display: 'inline-block', lineHeight: 'tight', fontSize: '1' }),
-      )}
-      href={href}
-    >
+    <Link className={className} href={href}>
       {children}
     </Link>
   );

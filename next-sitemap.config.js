@@ -1,15 +1,15 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.sanvicente.home',
+  siteUrl: 'https://sanvicente.house',
   generateRobotsTxt: true,
   exclude: [
     '/server-sitemap-index.xml',
-    '/work/server-sitemap.xml',
-    '/writing/element-test',
+    '/en/images/server-sitemap.xml',
+    '/es/images/server-sitemap.xml',
   ],
   robotsTxtOptions: {
     additionalSitemaps: [
-      'https://www.hunterjennings.dev/server-sitemap-index.xml',
+      'https://sanvicente.house/server-sitemap-index.xml',
     ],
   },
 };

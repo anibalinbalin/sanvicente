@@ -4,58 +4,12 @@ import { useState } from 'react';
 import { css } from 'ds/css';
 import { grid, stack } from 'ds/patterns';
 import { useTranslations } from 'next-intl';
+import { amenities } from '../_data/amenities';
 
 export const AmenitiesAccordion = () => {
   const [isOpen, setIsOpen] = useState(false);
   const t = useTranslations('amenities');
-
-  const amenities = [
-    'Barbecue utensils',
-    'BBQ grill',
-    'Beach access',
-    'Bed linens',
-    'Bidet',
-    'Blender',
-    'Books and reading material',
-    'Clothing storage',
-    'Cooking basics',
-    'Crib',
-    'Dedicated workspace',
-    'Dining table',
-    'Dishes and silverware',
-    'Drying rack for clothing',
-    'Ethernet connection',
-    'Exercise equipment',
-    'Extra pillows and blankets',
-    'Fire pit',
-    'Free parking on premises',
-    'Freezer',
-    'Gym',
-    'Hair dryer',
-    'Hangers',
-    'Heating',
-    'High chair',
-    'Hot water',
-    'Hot water kettle',
-    'Indoor fireplace',
-    'Iron',
-    'Kitchen',
-    'Kitchenette',
-    'Laundromat nearby',
-    'Mosquito net',
-    'Outdoor dining area',
-    'Outdoor furniture',
-    'Outdoor kitchen',
-    'Outdoor playground',
-    'Oven',
-    'Refrigerator',
-    'Room-darkening shades',
-    'Shower gel',
-    'TV',
-    'Washer',
-    'Wifi',
-    'Wine glasses'
-  ];
+  const amenityList = t.raw('list') as Record<string, string>[];
 
   return (
     <li className={stack({ gap: 's' })}>
@@ -98,19 +52,34 @@ export const AmenitiesAccordion = () => {
             paddingLeft: 'm',
           })}
         >
-          {amenities.map((amenity, index) => (
-            <li
-              key={index}
-              className={css({
-                textStyle: 'base',
-                fontSize: '1',
-                listStyle: 'none',
-                color: 'text2',
-              })}
-            >
-              • {amenity}
-            </li>
-          ))}
+          {amenityList.map((amenityItem, index) => {
+            const amenityData = amenities.find((a) => a.id === amenityItem.id);
+            return (
+              <li
+                key={index}
+                className={css({
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 'xs',
+                  textStyle: 'base',
+                  fontSize: '1',
+                  listStyle: 'none',
+                  color: 'text2',
+                })}
+              >
+                {amenityData && (
+                  <span
+                    className={css({
+                      display: 'inline-flex',
+                      flexShrink: 0,
+                    })}
+                    dangerouslySetInnerHTML={{ __html: amenityData.icon }}
+                  />
+                )}
+                {amenityItem.name}
+              </li>
+            );
+          })}
         </ul>
       )}
     </li>
