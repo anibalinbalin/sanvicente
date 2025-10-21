@@ -3,7 +3,6 @@
 import { ThemeProvider } from 'next-themes';
 import { Provider as BalancerProvider } from 'react-wrap-balancer';
 import { useAutoTheme } from '@/app/_hooks/useAutoTheme';
-import { getAutoThemeFromTime } from '@/app/_utils/helpers/time.helpers';
 
 interface ProvidersProps {
   children: React.ReactNode;
@@ -16,10 +15,9 @@ const AutoThemeInitializer = ({ children }: { children: React.ReactNode }) => {
 };
 
 export const Providers = ({ children }: ProvidersProps) => {
-  // Get initial theme based on time of day
-  const initialTheme = typeof window !== 'undefined'
-    ? getAutoThemeFromTime()
-    : 'light';
+  // Use consistent initial theme for both server and client to avoid hydration mismatch
+  // The useAutoTheme hook will update to the correct theme after hydration
+  const initialTheme = 'light';
 
   return (
     <ThemeProvider

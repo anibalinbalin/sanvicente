@@ -12,6 +12,7 @@ import { ProjectCard } from '@/app/_components/project-card';
 import { useTranslations } from 'next-intl';
 import { MapClientWrapper } from '@/app/_components/map-client-wrapper';
 import { useLocale } from 'next-intl';
+import { ThemeImage } from '@/app/_components/theme-image';
 
 export default function Home() {
   const t = useTranslations('home');
@@ -50,6 +51,17 @@ const IntroductionSection = () => {
         <p className={css({ textStyle: 'body' })}>
           {t('subtitle')}
         </p>
+      </div>
+      <div className={css({ w: 'full', maxW: '800px', mx: 'auto', rounded: 'card', overflow: 'hidden' })}>
+        <ThemeImage
+          src="/assets/frontpage/IMG_1271.webp"
+          darkSrc="/assets/frontpage/night_frontpage.webp"
+          alt="Pueblo San Vicente"
+          width={2000}
+          height={1500}
+          style={{ width: '100%', height: 'auto' }}
+          priority
+        />
       </div>
       <MapClientWrapper />
       <div className={stack({ gap: 'xs' })}>
