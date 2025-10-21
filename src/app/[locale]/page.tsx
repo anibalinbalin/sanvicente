@@ -13,6 +13,7 @@ import { useTranslations } from 'next-intl';
 import { MapClientWrapper } from '@/app/_components/map-client-wrapper';
 import { useLocale } from 'next-intl';
 import { ThemeImage } from '@/app/_components/theme-image';
+import { AmenitiesAccordion } from '@/app/_components/amenities-accordion';
 
 export default function Home() {
   const t = useTranslations('home');
@@ -44,7 +45,7 @@ const IntroductionSection = () => {
             textStyle: 'serif',
             lineHeight: 'tight',
           })}
-          aria-label='Who is Hunter Jennings'
+          aria-label='Pueblo San Vicente Introduction'
         >
           {t('title')}
         </h2>
@@ -63,7 +64,18 @@ const IntroductionSection = () => {
           priority
         />
       </div>
-      <MapClientWrapper />
+      <figure className={stack({ gap: 'xs' })}>
+        <MapClientWrapper />
+        <figcaption
+          className={css({
+            textStyle: 'base',
+            color: 'text2',
+            fontSize: '1',
+          })}
+        >
+          A 8 min drive from José Ignacio and 8 minutes from Manantiales
+        </figcaption>
+      </figure>
       <div className={stack({ gap: 'xs' })}>
         <h2
           className={css({ textStyle: 'base', color: 'text2', fontSize: '1' })}
@@ -163,9 +175,7 @@ const ConnectSection = () => {
           <ConnectListLink href={`/${locale}${PATHS.house}`}>
             {t('links.houseTips')}
           </ConnectListLink>
-          <ConnectListLink href={`/${locale}${PATHS.amenities}`}>
-            {t('links.amenities')}
-          </ConnectListLink>
+          <AmenitiesAccordion />
           <ConnectListLink href={`/${locale}${PATHS.planos}`}>
             {t('links.planos')}
           </ConnectListLink>
