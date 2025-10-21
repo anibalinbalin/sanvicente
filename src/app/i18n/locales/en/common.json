@@ -3,8 +3,8 @@
     "title": "Home",
     "introduction": {
       "title": "Pueblo San Vicente",
-      "subtitle": "Our house is located in Pueblo San Vicente, a beautiful coastal town in Uruguay.",
-      "description": "Experience a unique stay in our modern Nordic-style house that combines the warmth of wood with contemporary lines. Nestled in the peaceful Pueblo San Vicente, between La Barra and José Ignacio, just 8 minutes from Manantiales beach.\n\nAvailable for summer 2026 rental. Located where Uruguay's rural charm meets coastal breeze, offering a perfect retreat to connect with nature without compromising on comfort.",
+      "subtitle": "Maldonado, Uruguay.",
+      "description": "The house is Nordic-style. It is located in Pueblo San Vicente, between La Barra and José Ignacio, between the countryside and the ocean. 8 minutes from the beaches of Manantiales and José Ignacio.\n\nIt has 150 square meters, 3 bedrooms, 2 bathrooms and a toilet. Kitchen integrated with the living room.\n\nIt was designed to be integrated with its green spaces and maximize contact with nature.\nThe front and back open completely, leaving a free space between both gardens.",
       "mapCaption": "An 8 min drive from José Ignacio and 8 minutes from Manantiales"
     },
     "planos": {
@@ -47,27 +47,24 @@
     },
     "fauna": {
       "title": "Fauna",
-      "description1": "Living in the countryside means sharing space with nature harmoniously.",
-      "description2": "We have a black cat that visits us regularly. The neighbors collaborate by leaving water and food to maintain her daily routine. During June and July, we also receive visits from a small fox, which we treat with the same care.",
-      "description3": "Occasionally, a curious bird might fly into the living room. There's no need to worry, as they usually find their way out the same way they came in. If necessary, simply open the windows and wait for them to leave on their own.",
-      "description4": "At night, it's common for some insects to be attracted to the light. All of them are harmless, including wolf spiders which, despite their intimidating appearance, don't climb and pose no danger. We also have small frogs that, attracted by the insects, often wander around the external windows."
+      "description1": "Living in the countryside means sharing space with nature.",
+      "description2": "It is common for a black cat to visit the house as well as the occasional bird that takes advantage of the open windows to peek inside."
     },
     "flora": {
       "title": "Flora",
-      "description": "The garden is practically self-sufficient and receives weekly maintenance from Christian, our gardener. The only flowers that require extra attention are the violets - feel free to water them when they look wilted. They are located next to the gym area."
+      "description": "The garden is self-sufficient and receives weekly maintenance from Christian, the gardener."
     },
     "technology": {
       "title": "Technology",
       "wifi": {
         "title": "WiFi",
-        "description": "Two WiFi networks available:",
+        "description": "Two WiFi networks:",
         "networks": "2.4GHz and 5GHz",
-        "password": "Password for both: antonpirulero",
-        "note": "As a general rule, 5GHz networks are faster than 2.4GHz, but the latter have better range at the expense of lower speed than the former."
+        "password": "Password for both: antonpirulero"
       },
       "audio": {
         "title": "Audio System",
-        "description": "The house has a Sonos system compatible with AirPlay. When connected to WiFi, you can select \"Living Room\" to play music (for example, from Spotify). In the bedroom, you'll find another AirPlay speaker called \"Libratone.\""
+        "description": "The house has a Sonos system that works with AirPlay. When connected to WiFi, you can select \"Living Room\" to use them.\nIn the main bedroom there is another AirPlay speaker called \"Libratone.\""
       }
     },
     "kitchen": {
@@ -78,15 +75,15 @@
       },
       "oven": {
         "title": "Oven",
-        "description": "For simplified use, we recommend the function that heats from top and bottom with fan."
+        "description": "The function used 99% of the time is the one marked in the image below. Fan with temperature."
       },
       "cooktop": {
         "title": "Cooktop",
         "description": "Starting requires three steps:",
         "steps": {
-          "1": "Turn on the equipment",
-          "2": "Select the desired burner",
-          "3": "Adjust the temperature"
+          "1": "• Turn it on",
+          "2": "• Select the burner",
+          "3": "• Choose the temperature"
         }
       }
     },
@@ -94,7 +91,7 @@
       "title": "Laundry",
       "washer": {
         "title": "Washing Machine",
-        "description": "We recommend the \"Quick\" 30-minute program, with spinning at 1200 rpm to optimize subsequent drying."
+        "description": "The most practical function is the \"Quick\" 30-minute with spinning at 1200 rpm."
       },
       "dryer": {
         "title": "Dryer",
@@ -125,7 +122,7 @@
       { "id": "beach_access", "name": "Beach access" },
       { "id": "bed_linens", "name": "Bed linens" },
       { "id": "bidet", "name": "Bidet" },
-      { "id": "blender", "name": "Blender" },
+      { "id": "blender", "name": "Thermomix" },
       { "id": "books_and_reading_material", "name": "Books and reading material" },
       { "id": "clothing_storage", "name": "Clothing storage" },
       { "id": "cooking_basics", "name": "Cooking basics" },
@@ -133,9 +130,9 @@
       { "id": "dedicated_workspace", "name": "Dedicated workspace" },
       { "id": "dining_table", "name": "Dining table" },
       { "id": "dishes_and_silverware", "name": "Dishes and silverware" },
-      { "id": "drying_rack_for_clothing", "name": "Drying rack for clothing" },
+      { "id": "drying_rack_for_clothing", "name": "Drying rack" },
       { "id": "ethernet_connection", "name": "Ethernet connection" },
-      { "id": "exercise_equipment", "name": "Exercise equipment" },
+      { "id": "exercise_equipment", "name": "Gym equipment" },
       { "id": "extra_pillows_and_blankets", "name": "Extra pillows and blankets" },
       { "id": "fire_pit", "name": "Fire pit" },
       { "id": "free_parking_on_premises", "name": "Free parking on premises" },
@@ -144,14 +141,14 @@
       { "id": "hair_dryer", "name": "Hair dryer" },
       { "id": "hangers", "name": "Hangers" },
       { "id": "heating", "name": "Heating" },
-      { "id": "high_chair", "name": "High chair" },
+      { "id": "high_chair", "name": "Bar stools" },
       { "id": "hot_water", "name": "Hot water" },
       { "id": "hot_water_kettle", "name": "Hot water kettle" },
       { "id": "indoor_fireplace", "name": "Indoor fireplace" },
       { "id": "iron", "name": "Iron" },
       { "id": "kitchen", "name": "Kitchen" },
       { "id": "kitchenette", "name": "Bar" },
-      { "id": "laundromat_nearby", "name": "Laundromat nearby" },
+      { "id": "laundromat_nearby", "name": "Laundromat at Balneario Buenos Aires" },
       { "id": "mosquito_net", "name": "Mosquito net" },
       { "id": "outdoor_dining_area", "name": "Outdoor dining area" },
       { "id": "outdoor_furniture", "name": "Outdoor furniture" },
@@ -159,7 +156,7 @@
       { "id": "outdoor_playground", "name": "Outdoor playground" },
       { "id": "oven", "name": "Oven" },
       { "id": "refrigerator", "name": "Refrigerator" },
-      { "id": "room_darkening_shades", "name": "Room-darkening shades" },
+      { "id": "room_darkening_shades", "name": "Blackout shades" },
       { "id": "tv", "name": "TV" },
       { "id": "washer", "name": "Washer" },
       { "id": "wifi", "name": "Wifi" },
