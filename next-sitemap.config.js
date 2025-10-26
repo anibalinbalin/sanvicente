@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://sanvicente.house',
+  siteUrl: 'https://www.sanvicente.house',
   generateRobotsTxt: true,
   exclude: [
     '/server-sitemap-index.xml',
@@ -32,7 +32,7 @@ module.exports = {
   },
   robotsTxtOptions: {
     additionalSitemaps: [
-      'https://sanvicente.house/server-sitemap-index.xml',
+      'https://www.sanvicente.house/server-sitemap-index.xml',
     ],
   },
 };
