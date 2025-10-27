@@ -386,8 +386,92 @@ export const projects: Project[] = [
     description: 'Fotos extras',
     contribution: ['Additional'],
     date: '2024-03-12'
+  },
+  {
+    id: '10',
+    slug: 'playa',
+    name: 'Playa',
+    translationKey: 'projects.playa',
+    category: 'Beach',
+    categoryTranslationKey: 'projects.categories.beach',
+    featured: false,
+    featureMediaNarrow: {
+      id: '40',
+      url: '/assets/playa/1IMG_1342.webp',
+      darkUrl: '/assets/playa/1IMG_1342.webp',
+      width: 1512,
+      height: 2016
+    },
+    featureMediaWide: {
+      id: '41',
+      url: '/assets/playa/1IMG_1333.webp',
+      darkUrl: '/assets/playa/1IMG_1333.webp',
+      width: 2016,
+      height: 1512
+    },
+    media: [
+      {
+        id: '35',
+        url: '/assets/playa/1IMG_1333.webp',
+        darkUrl: '/assets/playa/1IMG_1333.webp',
+        width: 2016,
+        height: 1512
+      },
+      {
+        id: '36',
+        url: '/assets/playa/1IMG_1336.webp',
+        darkUrl: '/assets/playa/1IMG_1336.webp',
+        width: 2016,
+        height: 1512
+      },
+      {
+        id: '37',
+        url: '/assets/playa/1IMG_1338.webp',
+        darkUrl: '/assets/playa/1IMG_1338.webp',
+        width: 2016,
+        height: 1512
+      },
+      {
+        id: '38',
+        url: '/assets/playa/1IMG_1342.webp',
+        darkUrl: '/assets/playa/1IMG_1342.webp',
+        width: 1512,
+        height: 2016
+      },
+      {
+        id: '39',
+        url: '/assets/playa/1IMG_1343.webp',
+        darkUrl: '/assets/playa/1IMG_1343.webp',
+        width: 1512,
+        height: 2016
+      },
+      {
+        id: '40',
+        url: '/assets/playa/1IMG_1345.webp',
+        darkUrl: '/assets/playa/1IMG_1345.webp',
+        width: 1512,
+        height: 2016
+      },
+      {
+        id: '41',
+        url: '/assets/playa/1IMG_1347.webp',
+        darkUrl: '/assets/playa/1IMG_1347.webp',
+        width: 2016,
+        height: 1512
+      },
+      {
+        id: '42',
+        url: '/assets/playa/1IMG_1351.webp',
+        darkUrl: '/assets/playa/1IMG_1351.webp',
+        width: 2016,
+        height: 1512
+      }
+    ],
+    description: 'Beach photos',
+    contribution: ['Beach'],
+    date: '2024-10-27'
   }
-]; 
+];
 
 export const getProjectData = () => {
   return fetch('https://api.example.com/projects').then(response => response.json());

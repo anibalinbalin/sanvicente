@@ -32,10 +32,12 @@
     "bedroom_3": "Bedroom 3",
     "exterior": "Exterior",
     "additional": "Additional photos",
+    "playa": "Beach",
     "categories": {
       "interior": "Interior",
       "exterior": "Exterior",
-      "additional": "Additional"
+      "additional": "Additional",
+      "beach": "Beach"
     }
   },
   "house": {
