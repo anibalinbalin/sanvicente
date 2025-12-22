@@ -27,7 +27,6 @@ const nextConfig = {
   },
   // Basic performance optimizations
   compress: true,
-  swcMinify: true,
   poweredByHeader: false,
 };
 

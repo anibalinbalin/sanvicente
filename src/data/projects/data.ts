@@ -11,9 +11,9 @@ export const projects: Project[] = [
     featured: true,
     featureMediaNarrow: {
       id: '1',
-      url: '/assets/images/Dining area/dinning_IMG_7951.webp',
+      url: '/assets/images/Dining area/dinning_IMG_7963.webp',
       darkUrl: '/assets/images_night/Dining area/night_dinning_room_IMG_8470.webp',
-      width: 1440,
+      width: 810,
       height: 1080
     },
     featureMediaWide: {
@@ -26,13 +26,6 @@ export const projects: Project[] = [
     media: [
       {
         id: '1',
-        url: '/assets/images/Dining area/dinning_IMG_7951.webp',
-        darkUrl: '/assets/images_night/Dining area/night_dinning_room_IMG_8470.webp',
-        width: 1440,
-        height: 1080
-      },
-      {
-        id: '2',
         url: '/assets/images/Dining area/dinning_IMG_7963.webp',
         darkUrl: '/assets/images_night/Dining area/night_dinning_room_IMG_8465.webp',
         width: 810,
@@ -120,12 +113,6 @@ export const projects: Project[] = [
       },
       {
         id: '7',
-        url: '/assets/images/Bedroom_1/dorm1_IMG_8406.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '8',
         url: '/assets/images/Bedroom_1/dorm1_IMG_8407.webp',
         width: 1920,
         height: 1080
@@ -141,6 +128,12 @@ export const projects: Project[] = [
         url: '/assets/images/Bedroom_1/dorm1_IMG_8482.webp',
         width: 1920,
         height: 1080
+      },
+      {
+        id: '11',
+        url: '/assets/images/Bedroom_1/dorm1_IMG_1932.webp',
+        width: 4032,
+        height: 3024
       }
     ],
     description: 'Dorm 1',
@@ -247,84 +240,69 @@ export const projects: Project[] = [
     categoryTranslationKey: 'projects.categories.exterior',
     featured: false,
     featureMediaNarrow: {
-      id: '22',
-      url: '/assets/images/Exterior/ext_IMG_7972.webp',
-      darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8402.webp',
-      width: 1920,
-      height: 1080
+      id: '1',
+      url: '/assets/images/Exterior/ext_IMG_1884.webp',
+      width: 4032,
+      height: 3024
     },
     featureMediaWide: {
-      id: '23',
-      url: '/assets/images/Exterior/ext_IMG_7973.webp',
-      darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8404.webp',
-      width: 1920,
-      height: 1080
+      id: '2',
+      url: '/assets/images/Exterior/ext_IMG_1908.webp',
+      width: 4032,
+      height: 3024
     },
     media: [
       {
-        id: '20',
+        id: '1',
+        url: '/assets/images/Exterior/ext_IMG_1884.webp',
+        width: 4032,
+        height: 3024
+      },
+      {
+        id: '2',
+        url: '/assets/images/Exterior/ext_IMG_1908.webp',
+        width: 4032,
+        height: 3024
+      },
+      {
+        id: '3',
+        url: '/assets/images/Exterior/ext_IMG_1892.webp',
+        width: 4032,
+        height: 3024
+      },
+      {
+        id: '4',
+        url: '/assets/images/Exterior/ext_IMG_1897.webp',
+        width: 4032,
+        height: 3024
+      },
+      {
+        id: '5',
+        url: '/assets/images/Exterior/ext_IMG_1899.webp',
+        width: 4032,
+        height: 3024
+      },
+      {
+        id: '6',
+        url: '/assets/images/Exterior/ext_IMG_1902.webp',
+        width: 3799,
+        height: 3024
+      },
+      {
+        id: '7',
+        url: '/assets/images/Exterior/ext_IMG_1905.webp',
+        width: 4032,
+        height: 3024
+      },
+      {
+        id: '8',
+        url: '/assets/images/Exterior/ext_IMG_1906.webp',
+        width: 4032,
+        height: 3024
+      },
+      {
+        id: '9',
         url: '/assets/images/Exterior/ext_IMG_7972.webp',
-        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8402.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '21',
-        url: '/assets/images/Exterior/ext_IMG_7973.webp',
-        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8404.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '22',
-        url: '/assets/images/Exterior/ext_IMG_7974.webp',
-        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8411.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '23',
-        url: '/assets/images/Exterior/ext_IMG_7975.webp',
-        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8416.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '24',
-        url: '/assets/images/Exterior/ext_IMG_8528.webp',
-        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8426.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '25',
-        url: '/assets/images/Exterior/ext_IMG_8530.webp',
-        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8428.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '26',
-        url: '/assets/images/Exterior/ext_IMG_8531.webp',
-        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8451.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '27',
-        url: '/assets/images/Exterior/ext_IMG_8535.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '28',
-        url: '/assets/images/Exterior/ext_IMG_8536.webp',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: '29',
-        url: '/assets/images/Exterior/ext_IMG_8538.webp',
         width: 1920,
         height: 1080
       }

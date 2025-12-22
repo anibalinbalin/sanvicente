@@ -12,8 +12,8 @@ export default function PlanosPage() {
       rounded: 'card'
     })}>
       <ThemeImage
-        src="/images/planos/plano_light.jpg"
-        darkSrc="/images/planos/plano_dark.jpg"
+        src="/images/planos/plano_light.webp"
+        darkSrc="/images/planos/plano_dark.webp"
         alt="Floor plan"
         width={1200}
         height={800}

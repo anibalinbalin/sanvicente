@@ -12,13 +12,10 @@ export const AmenitiesAccordion = () => {
   const amenityList = t.raw('list') as Record<string, string>[];
 
   return (
-    <li className={stack({ gap: 's' })}>
+    <li className={css({ listStyle: 'none' }) + ' ' + stack({ gap: 's' })}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={css({
-          display: 'flex',
-          alignItems: 'center',
-          gap: 'xs',
           background: 'none',
           border: 'none',
           padding: 0,
@@ -27,20 +24,13 @@ export const AmenitiesAccordion = () => {
           fontSize: '1',
           lineHeight: 'tight',
           color: 'text2',
+          textAlign: 'left',
+          width: '100%',
           _hover: {
             color: 'slate9',
           },
         })}
       >
-        <span
-          className={css({
-            transition: 'transform 0.2s ease',
-            display: 'inline-block',
-            transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)',
-          })}
-        >
-          ▸
-        </span>
         {t('title')}
       </button>
 
