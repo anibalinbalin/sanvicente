@@ -309,7 +309,7 @@ export const projects: Project[] = [
     ],
     description: 'Exterior photos',
     contribution: ['Exterior'],
-    date: '2024-03-13'
+    date: '2024-10-26'
   },
   {
     id: '9',
