@@ -154,13 +154,7 @@ const ConnectSection = () => {
   
   return (
     <section className={stack({ gap: 'm' })}>
-      <h2 className={css({ textStyle: 'base', lineHeight: 'tight' })}>
-        {t('title')}
-      </h2>
       <div className={stack({ gap: 'xl' })}>
-        <p className={css({ textStyle: 'body' })}>
-          {t('subtitle')}
-        </p>
         <ul className={stack({ gap: 's' })}>
           <li
             className={css({
