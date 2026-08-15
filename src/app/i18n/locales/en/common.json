@@ -33,11 +33,13 @@
     "exterior": "Exterior",
     "additional": "Additional photos",
     "playa": "Beach",
+    "living_room": "Living Room",
     "categories": {
       "interior": "Interior",
       "exterior": "Exterior",
       "additional": "Additional",
-      "beach": "Beach"
+      "beach": "Beach",
+      "living_room": "Living Room"
     }
   },
   "house": {

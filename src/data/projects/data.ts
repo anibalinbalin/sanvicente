@@ -44,11 +44,61 @@ export const projects: Project[] = [
         darkUrl: '/assets/images_night/Dining area/night_kitchen_IMG_8458.webp',
         width: 1920,
         height: 1080
+      },
+      {
+        id: '5',
+        url: '/assets/images/Dining area/comedor_island.webp',
+        width: 1200,
+        height: 900
+      },
+      {
+        id: '6',
+        url: '/assets/images/Dining area/comedor_wide.webp',
+        width: 810,
+        height: 1080
+      },
+      {
+        id: '7',
+        url: '/assets/images/Dining area/kitchen_thermomix.webp',
+        width: 1200,
+        height: 900
       }
     ],
     description: 'Comedor',
     contribution: ['Interior'],
     date: '2024-03-20'
+  },
+  {
+    id: '11',
+    slug: 'living-room',
+    name: 'Living Room',
+    translationKey: 'projects.living_room',
+    category: 'Living Room',
+    categoryTranslationKey: 'projects.categories.living_room',
+    featured: false,
+    featureMediaNarrow: {
+      id: '1',
+      url: '/assets/images/Living_Room/library_armchairs.webp',
+      width: 1200,
+      height: 900
+    },
+    featureMediaWide: {
+      id: '2',
+      url: '/assets/images/Living_Room/library_armchairs.webp',
+      width: 1200,
+      height: 900
+    },
+    media: [
+      {
+        id: '1',
+        url: '/assets/images/Living_Room/library_armchairs.webp',
+        width: 1200,
+        height: 900
+      }
+    ],
+    description: 'Living room with library',
+    contribution: ['Interior'],
+    date: '2024-03-21'
   },
   {
     id: '2',
@@ -134,6 +184,24 @@ export const projects: Project[] = [
         url: '/assets/images/Bedroom_1/dorm1_IMG_1932.webp',
         width: 4032,
         height: 3024
+      },
+      {
+        id: '12',
+        url: '/assets/images/Bedroom_1/dorm1_wardrobe.webp',
+        width: 1200,
+        height: 1600
+      },
+      {
+        id: '13',
+        url: '/assets/images/Bedroom_1/dorm1_wide_angle.webp',
+        width: 1200,
+        height: 900
+      },
+      {
+        id: '14',
+        url: '/assets/images/Bedroom_1/dorm1_closet_towels.webp',
+        width: 1200,
+        height: 1600
       }
     ],
     description: 'Dorm 1',
@@ -225,6 +293,12 @@ export const projects: Project[] = [
         darkUrl: '/assets/images_night/Bedroom_3/dorm3_IMG_8513.webp',
         width: 1920,
         height: 1080
+      },
+      {
+        id: '16',
+        url: '/assets/images/Bedroom_3/dorm3_twin_desk.webp',
+        width: 1200,
+        height: 1600
       }
     ],
     description: 'Habitacion 3',
@@ -305,6 +379,72 @@ export const projects: Project[] = [
         url: '/assets/images/Exterior/ext_IMG_7972.webp',
         width: 1920,
         height: 1080
+      },
+      {
+        id: '10',
+        url: '/assets/images/Exterior/ext_facade_front.webp',
+        width: 1200,
+        height: 800
+      },
+      {
+        id: '11',
+        url: '/assets/images/Exterior/ext_glass_doors.webp',
+        width: 813,
+        height: 1080
+      },
+      {
+        id: '12',
+        url: '/assets/images/Exterior/ext_pergola_seating.webp',
+        width: 1200,
+        height: 896
+      },
+      {
+        id: '13',
+        url: '/assets/images/Exterior/ext_garden_view.webp',
+        width: 1200,
+        height: 859
+      },
+      {
+        id: '14',
+        url: '/assets/images/Exterior/ext_garden_chair.webp',
+        width: 1200,
+        height: 900
+      },
+      {
+        id: '15',
+        url: '/assets/images/Exterior/ext_seating_bbq.webp',
+        width: 1200,
+        height: 900
+      },
+      {
+        id: '16',
+        url: '/assets/images/Exterior/ext_night_pergola_bbq.webp',
+        width: 1200,
+        height: 1600
+      },
+      {
+        id: '17',
+        url: '/assets/images/Exterior/ext_outdoor_dining.webp',
+        width: 1200,
+        height: 900
+      },
+      {
+        id: '18',
+        url: '/assets/images/Exterior/ext_pergola_side.webp',
+        width: 1200,
+        height: 1600
+      },
+      {
+        id: '19',
+        url: '/assets/images/Exterior/ext_night_pergola_side.webp',
+        width: 1200,
+        height: 1600
+      },
+      {
+        id: '20',
+        url: '/assets/images/Exterior/ext_sun_loungers.webp',
+        width: 896,
+        height: 1200
       }
     ],
     description: 'Exterior photos',
@@ -359,6 +499,24 @@ export const projects: Project[] = [
         url: '/assets/images/Additional_Photos/wash_IMG_7977.webp',
         width: 1920,
         height: 1080
+      },
+      {
+        id: '34',
+        url: '/assets/images/Additional_Photos/facade_wide.webp',
+        width: 1200,
+        height: 645
+      },
+      {
+        id: '35',
+        url: '/assets/images/Additional_Photos/kitchen_library_wide.webp',
+        width: 1200,
+        height: 900
+      },
+      {
+        id: '36',
+        url: '/assets/images/Additional_Photos/beach_towels.webp',
+        width: 1200,
+        height: 1600
       }
     ],
     description: 'Fotos extras',
