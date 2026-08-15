@@ -14,7 +14,6 @@ import { MapClientWrapper } from '@/app/_components/map-client-wrapper';
 import { useLocale } from 'next-intl';
 import { ThemeImage } from '@/app/_components/theme-image';
 import { AmenitiesAccordion } from '@/app/_components/amenities-accordion';
-import { ProtectedContact } from '@/app/_components/protected-contact';
 
 export default function Home() {
   const t = useTranslations('home');
@@ -163,24 +162,6 @@ const ConnectSection = () => {
           {t('subtitle')}
         </p>
         <ul className={stack({ gap: 's' })}>
-          <ConnectLinkListItem label={t('links.whatsapp')}>
-            <ProtectedContact
-              type="whatsapp"
-              className={cx(
-                link({ color: 'secondary' }),
-                css({ display: 'inline-block', lineHeight: 'tight', fontSize: '1', cursor: 'pointer' }),
-              )}
-            />
-          </ConnectLinkListItem>
-          <ConnectLinkListItem label={t('links.email')}>
-            <ProtectedContact
-              type="email"
-              className={cx(
-                link({ color: 'secondary' }),
-                css({ display: 'inline-block', lineHeight: 'tight', fontSize: '1', cursor: 'pointer' }),
-              )}
-            />
-          </ConnectLinkListItem>
           <li
             className={css({
               display: 'flex',
@@ -208,29 +189,6 @@ const ConnectSection = () => {
   );
 };
 
-interface ConnectLinkListItemProps {
-  label: string;
-}
-
-const ConnectLinkListItem = ({
-  label,
-  children,
-}: React.PropsWithChildren<ConnectLinkListItemProps>) => {
-  return (
-    <li className={css({ display: 'flex', gap: 's', alignItems: 'center', flexWrap: 'wrap' })}>
-      <h3
-        className={css({
-          textStyle: 'base',
-          fontSize: '1',
-          lineHeight: 'tight',
-        })}
-      >
-        {label}
-      </h3>
-      <div>{children}</div>
-    </li>
-  );
-};
 
 const ConnectListLink = ({
   href,
