@@ -1,5 +1,15 @@
-import { Writing } from 'contentlayer/generated';
 import { compareDesc, format, parseISO } from 'date-fns';
+
+interface Writing {
+  title: string;
+  date: string;
+  description: string;
+  featured?: boolean;
+  status?: string;
+  slug: string;
+  readingTime?: { text: string; minutes: number; words: number };
+  body: { raw: string; code: string };
+}
 
 export const getYearFromDate = (date: string): string => {
   return new Date(date).getFullYear().toString();

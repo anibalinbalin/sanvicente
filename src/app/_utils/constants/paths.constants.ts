@@ -3,8 +3,6 @@ export const PATHS = {
   twitter: '#',
   cv: '#',
   breakline: '#',
-  email: 'mailto:laurafuentesaro@gmail.com',
-  whatsapp: 'https://wa.me/59899108220',
   base: process.env.NEXT_PUBLIC_URL ?? 'https://www.sanvicente.house',
   home: '/',
   writing: '/writing',

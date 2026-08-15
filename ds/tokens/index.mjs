@@ -514,6 +514,10 @@ const tokens = {
   "spacing.-3xl": {
     "value": "calc(var(--spacing-3xl) * -1)",
     "variable": "var(--spacing-3xl)"
+  },
+  "colors.colorPalette": {
+    "value": "var(--colors-color-palette)",
+    "variable": "var(--colors-color-palette)"
   }
 }
 

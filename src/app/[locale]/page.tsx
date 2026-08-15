@@ -14,6 +14,7 @@ import { MapClientWrapper } from '@/app/_components/map-client-wrapper';
 import { useLocale } from 'next-intl';
 import { ThemeImage } from '@/app/_components/theme-image';
 import { AmenitiesAccordion } from '@/app/_components/amenities-accordion';
+import { ProtectedContact } from '@/app/_components/protected-contact';
 
 export default function Home() {
   const t = useTranslations('home');
@@ -163,14 +164,22 @@ const ConnectSection = () => {
         </p>
         <ul className={stack({ gap: 's' })}>
           <ConnectLinkListItem label={t('links.whatsapp')}>
-            <ConnectListLink href={PATHS.whatsapp}>
-              +598 99108220
-            </ConnectListLink>
+            <ProtectedContact
+              type="whatsapp"
+              className={cx(
+                link({ color: 'secondary' }),
+                css({ display: 'inline-block', lineHeight: 'tight', fontSize: '1', cursor: 'pointer' }),
+              )}
+            />
           </ConnectLinkListItem>
           <ConnectLinkListItem label={t('links.email')}>
-            <ConnectListLink href={PATHS.email}>
-              laurafuentesaro@gmail.com
-            </ConnectListLink>
+            <ProtectedContact
+              type="email"
+              className={cx(
+                link({ color: 'secondary' }),
+                css({ display: 'inline-block', lineHeight: 'tight', fontSize: '1', cursor: 'pointer' }),
+              )}
+            />
           </ConnectLinkListItem>
           <li
             className={css({

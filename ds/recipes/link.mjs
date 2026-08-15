@@ -1,21 +1,9 @@
-import { splitProps } from '../helpers.mjs';
-import { createRecipe } from './create-recipe.mjs';
+import { memo, splitProps } from '../helpers.mjs';
+import { createRecipe, mergeRecipes } from './create-recipe.mjs';
 
-const linkFn = createRecipe('link', {}, [])
+const linkFn = /* @__PURE__ */ createRecipe('link', {}, [])
 
-const variantKeys = [
-  "color",
-  "underline"
-]
-
-function splitVariantProps(props) {
-  return splitProps(props, variantKeys)
-}
-
-export const link = Object.assign(linkFn, {
-  __recipe__: true,
-  variantKeys,
-  variantMap: {
+const linkVariantMap = {
   "color": [
     "primary",
     "secondary",
@@ -24,6 +12,22 @@ export const link = Object.assign(linkFn, {
   "underline": [
     "true"
   ]
-},
-  splitVariantProps,
+}
+
+const linkVariantKeys = Object.keys(linkVariantMap)
+
+export const link = /* @__PURE__ */ Object.assign(memo(linkFn.recipeFn), {
+  __recipe__: true,
+  __name__: 'link',
+  __getCompoundVariantCss__: linkFn.__getCompoundVariantCss__,
+  raw: (props) => props,
+  variantKeys: linkVariantKeys,
+  variantMap: linkVariantMap,
+  merge(recipe) {
+    return mergeRecipes(this, recipe)
+  },
+  splitVariantProps(props) {
+    return splitProps(props, linkVariantKeys)
+  },
+  getVariantProps: linkFn.getVariantProps,
 })

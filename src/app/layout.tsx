@@ -121,8 +121,6 @@ const structuredData = {
     'https://www.sanvicente.house/assets/images/Exterior/ext_IMG_7972.webp',
     'https://www.sanvicente.house/assets/images/Additional_Photos/guest_bathroom_IMG_7958.webp',
   ],
-  telephone: '+598-99-108-220',
-  email: 'laurafuentesaro@gmail.com',
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {

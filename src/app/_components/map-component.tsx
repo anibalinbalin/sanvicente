@@ -15,19 +15,14 @@ const center = {
   lng: -54.769312695336176,
 };
 
-const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-
-if (!GOOGLE_MAPS_API_KEY) {
-  console.error('Google Maps API key is missing');
-  throw new Error('Google Maps API key is required');
-}
+const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? '';
 
 const MapComponent = () => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: GOOGLE_MAPS_API_KEY,
   });
 
-  if (!isLoaded) {
+  if (!GOOGLE_MAPS_API_KEY || !isLoaded) {
     return <div className={css({ w: 'full', h: '400px', bgColor: 'slate8', rounded: 'card' })} />;
   }
 

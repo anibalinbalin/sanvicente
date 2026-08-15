@@ -1,6 +1,6 @@
 'use client';
 import { circle, grid } from 'ds/patterns';
-import { LayoutGroup } from 'framer-motion';
+import { LayoutGroup } from 'motion/react';
 import { ICON_SVG_COMPONENTS, Theme } from './icon-components';
 import dynamic from 'next/dynamic';
 

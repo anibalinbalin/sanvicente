@@ -1,6 +1,7 @@
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import { PATHS } from '@/app/_utils/constants/paths.constants';
-import { grid, linkBox, linkOverlay, stack } from 'ds/patterns';
+import { grid, linkOverlay, stack } from 'ds/patterns';
+import { linkBox } from 'ds/patterns/link-box';
 import { Metadata } from 'next';
 import { BackToLink } from '@/app/_components/back-to-link';
 import { css } from 'ds/css';

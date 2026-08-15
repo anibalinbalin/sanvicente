@@ -1,6 +1,7 @@
 import ArrowLeftIcon from '@/app/_components/icons/ArrowLeftIcon';
 import { css } from 'ds/css';
-import { hstack, linkBox, linkOverlay } from 'ds/patterns';
+import { hstack, linkOverlay } from 'ds/patterns';
+import { linkBox } from 'ds/patterns/link-box';
 import { token } from 'ds/tokens';
 import Link from 'next/link';
 import * as React from 'react';

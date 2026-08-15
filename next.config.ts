@@ -1,9 +1,7 @@
-const withNextIntl = require('next-intl/plugin')(
-  './src/i18n.ts'
-);
+import type { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   reactStrictMode: true,
   typescript: {
     ignoreBuildErrors: true,
@@ -14,7 +12,8 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL || 'http://localhost:3000',
   },
-  images: { unoptimized: true,
+  images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -22,12 +21,11 @@ const nextConfig = {
       },
     ],
     formats: ['image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256],
   },
-  // Basic performance optimizations
+  allowedDevOrigins: ['10.10.11.186', 'claude-code-sec.tailf626.ts.net'],
   compress: true,
   poweredByHeader: false,
 };
 
-module.exports = withNextIntl(nextConfig);
+const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
+export default withNextIntl(nextConfig);

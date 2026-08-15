@@ -32,7 +32,7 @@ const getWeather = async () => {
       next: { revalidate: 60 },
     });
     if (!response.ok) {
-      throw new Error('Weather API response was not ok');
+      return { temp: undefined, description: undefined, icon: undefined };
     }
     const data = await response.json();
     const checked = OpenWeatherResponseZod.parse(data);

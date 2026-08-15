@@ -1,16 +1,16 @@
+import { hasLocale } from 'next-intl';
 import { getRequestConfig } from 'next-intl/server';
-import { headers } from 'next/headers';
-import { locales, defaultLocale } from './app/i18n/config';
+import { routing } from './app/i18n/routing';
 
-export default getRequestConfig(async () => {
-  const now = new Date();
-  const headersList = await headers();
-  const locale = headersList.get('x-next-intl-locale') || defaultLocale;
-  
+export default getRequestConfig(async ({ requestLocale }) => {
+  const requested = await requestLocale;
+  const locale = hasLocale(routing.locales, requested)
+    ? requested
+    : routing.defaultLocale;
+
   return {
     locale,
     messages: (await import(`./app/i18n/locales/${locale}/common.json`)).default,
     timeZone: 'America/Montevideo',
-    now
   };
-}); 
+});

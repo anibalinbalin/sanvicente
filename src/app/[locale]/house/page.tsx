@@ -7,11 +7,11 @@ import { PATHS } from '@/app/_utils/constants/paths.constants';
 import Image from 'next/image';
 import { BackToLink } from '@/app/_components/back-to-link';
 import { getTranslations, getLocale } from 'next-intl/server';
-import { locales } from '@/app/i18n/config';
+import { routing } from '@/app/i18n/routing';
 import { TechnologySection } from '@/components/sections/technology-section';
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 const title = 'House';

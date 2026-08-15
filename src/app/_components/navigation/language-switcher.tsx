@@ -4,10 +4,7 @@ import { useLocale } from 'next-intl';
 import { useTransition } from 'react';
 import { TranslateIcon } from '../icons/TranslateIcon';
 import { css, cx, cva } from 'ds/css';
-import { createSharedPathnamesNavigation } from 'next-intl/navigation';
-import { locales, pathnames } from '@/app/i18n/config';
-
-const { useRouter, usePathname } = createSharedPathnamesNavigation({ locales, pathnames });
+import { useRouter, usePathname } from '@/app/i18n/routing';
 
 export const LanguageSwitcher = () => {
   const [isPending, startTransition] = useTransition();

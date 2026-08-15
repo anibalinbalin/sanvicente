@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
-import { locales } from '../i18n/config';
+import { routing } from '../i18n/routing';
 import { Analytics } from '@vercel/analytics/react';
 import { basierCircle, jetbrainsMono, untitledSerif } from '@/app/_styles/fonts';
 import { css } from 'ds/css';
@@ -9,7 +9,7 @@ import { Footer } from '@/app/_components/footer/footer';
 import '../_styles/global.css';
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 async function getMessages(locale: string) {
