@@ -316,12 +316,14 @@ export const projects: Project[] = [
     featureMediaNarrow: {
       id: '1',
       url: '/assets/images/Exterior/ext_IMG_1884.webp',
+      darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8404.webp',
       width: 4032,
       height: 3024
     },
     featureMediaWide: {
       id: '2',
       url: '/assets/images/Exterior/ext_IMG_1908.webp',
+      darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8428.webp',
       width: 4032,
       height: 3024
     },
@@ -329,12 +331,14 @@ export const projects: Project[] = [
       {
         id: '1',
         url: '/assets/images/Exterior/ext_IMG_1884.webp',
+        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8404.webp',
         width: 4032,
         height: 3024
       },
       {
         id: '2',
         url: '/assets/images/Exterior/ext_IMG_1908.webp',
+        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8428.webp',
         width: 4032,
         height: 3024
       },
@@ -377,12 +381,14 @@ export const projects: Project[] = [
       {
         id: '9',
         url: '/assets/images/Exterior/ext_IMG_7972.webp',
+        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8426.webp',
         width: 1920,
         height: 1080
       },
       {
         id: '10',
         url: '/assets/images/Exterior/ext_facade_front.webp',
+        darkUrl: '/assets/images_night/Exterior/night_exterior_IMG_8451.webp',
         width: 1200,
         height: 800
       },
@@ -419,6 +425,7 @@ export const projects: Project[] = [
       {
         id: '16',
         url: '/assets/images/Exterior/ext_night_pergola_bbq.webp',
+        darkUrl: '/assets/images/Exterior/ext_night_pergola_bbq.webp',
         width: 1200,
         height: 1600
       },
@@ -437,6 +444,7 @@ export const projects: Project[] = [
       {
         id: '19',
         url: '/assets/images/Exterior/ext_night_pergola_side.webp',
+        darkUrl: '/assets/images/Exterior/ext_night_pergola_side.webp',
         width: 1200,
         height: 1600
       },
