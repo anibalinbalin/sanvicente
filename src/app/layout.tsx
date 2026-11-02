@@ -1,6 +1,7 @@
 import './_styles/global.css';
 import { basierCircle, untitledSerif, jetbrainsMono } from './_styles/fonts';
 import { Providers } from './providers';
+import { themeScript } from './_utils/helpers/theme-script';
 import { Metadata } from 'next';
 import { css } from 'ds/css';
 import { Analytics } from '@vercel/analytics/react';
@@ -130,6 +131,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       className={`${basierCircle.variable} ${untitledSerif.variable} ${jetbrainsMono.variable}`}
     >
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

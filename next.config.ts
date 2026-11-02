@@ -13,14 +13,18 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL || 'http://localhost:3000',
   },
   images: {
-    unoptimized: true,
+    // Our own loader serves resized copies built by sharp at build time
+    // (scripts/build-image-variants.mjs), so Vercel's paid optimizer is never used.
+    loader: 'custom',
+    loaderFile: './src/image-loader.ts',
+    deviceSizes: [640, 1080, 1920],
+    imageSizes: [],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'media.graphassets.com',
       },
     ],
-    formats: ['image/webp'],
   },
   allowedDevOrigins: ['10.10.11.186', 'claude-code-sec.tailf626.ts.net'],
   compress: true,

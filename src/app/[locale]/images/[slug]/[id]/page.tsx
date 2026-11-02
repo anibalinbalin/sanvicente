@@ -7,19 +7,19 @@ import { notFound } from 'next/navigation';
 import { BackToLink } from '@/app/_components/back-to-link';
 import { ThemeImage } from '@/app/_components/theme-image';
 import Link from 'next/link';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 interface Props {
-  params: {
+  params: Promise<{
     slug: string;
     locale: string;
     id: string;
-  };
+  }>;
 }
 
 export default async function ProjectPage({ params }: Props) {
-  // In Next.js 15, we don't need to await params directly
-  const { slug: projectSlug, locale, id } = params;
+  const { slug: projectSlug, locale, id } = await params;
+  setRequestLocale(locale);
   
   const [project, projects, t] = await Promise.all([
     getProject(projectSlug),
@@ -61,8 +61,8 @@ export default async function ProjectPage({ params }: Props) {
               height={1080}
               style={{ width: '100%', height: 'auto' }}
               quality={85}
+              sizes="(max-width: 700px) 100vw, 700px"
               priority={index === 0}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
             />
           </div>
         ))}

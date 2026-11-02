@@ -10,12 +10,15 @@ import ArrowRightIcon from '@/app/_components/icons/ArrowRightIcon';
 import { getProjects } from '@/app/_utils/helpers/projects.helpers';
 import { ProjectCard } from '@/app/_components/project-card';
 import { useTranslations } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 import { MapClientWrapper } from '@/app/_components/map-client-wrapper';
 import { useLocale } from 'next-intl';
 import { ThemeImage } from '@/app/_components/theme-image';
 import { AmenitiesAccordion } from '@/app/_components/amenities-accordion';
 
-export default function Home() {
+export default function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = React.use(params);
+  setRequestLocale(locale);
   const t = useTranslations('home');
   
   return (
@@ -61,6 +64,7 @@ const IntroductionSection = () => {
           width={2000}
           height={1500}
           style={{ width: '100%', height: 'auto' }}
+          sizes="(max-width: 700px) 100vw, 700px"
           priority
         />
       </div>
@@ -117,7 +121,7 @@ const ProjectGrid = () => {
         <div key={project.id}>
           <ProjectCard
             project={project}
-            sizes='(max-width: 449px) 100vw, (max-width: 767px) 50vw, 33vw'
+            sizes='(max-width: 519px) 100vw, (max-width: 767px) 50vw, 233px'
           />
         </div>
       ))}

@@ -7,7 +7,14 @@ import { BackToLink } from '@/app/_components/back-to-link';
 import { PATHS } from '@/app/_utils/constants/paths.constants';
 import { ThemeImage } from '@/app/_components/theme-image';
 import Link from 'next/link';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { routing } from '@/app/i18n/routing';
+
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) =>
+    getProjects().map((p) => ({ locale, slug: p.slug })),
+  );
+}
 
 interface Props {
   params: Promise<{
@@ -18,6 +25,7 @@ interface Props {
 
 export default async function ProjectPage({ params }: Props) {
   const { slug, locale } = await params;
+  setRequestLocale(locale);
   const [project, projects, t] = await Promise.all([
     getProject(slug),
     getProjects(),
@@ -60,7 +68,8 @@ export default async function ProjectPage({ params }: Props) {
               height={1080}
               style={{ width: '100%', height: 'auto' }}
               quality={85}
-              sizes="100vw"
+              sizes="(max-width: 700px) 100vw, 700px"
+              priority={index === 0}
             />
           </div>
         ))}

@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { ThemeImage } from '@/app/_components/theme-image';
 import { css } from 'ds/css';
+import { setRequestLocale } from 'next-intl/server';
 
-export default function PlanosPage() {
+export default async function PlanosPage({ params }: { params: Promise<{ locale: string }> }) {
+  setRequestLocale((await params).locale);
   return (
     <div className={css({
       position: 'relative',

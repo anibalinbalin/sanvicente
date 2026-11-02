@@ -114,7 +114,7 @@ export const ProjectMedia = ({ media }: ProjectMediaProps) => {
               width={width}
               height={height}
               style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
-              sizes="100vw"
+              sizes="(max-width: 700px) 100vw, 700px"
               quality={100}
               priority={idx < 2}
               onError={(e) => {

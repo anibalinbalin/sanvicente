@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next && next dev",
-    "build": "next build && next-sitemap",
+    "images": "node scripts/build-image-variants.mjs",
+    "dev": "rm -rf .next && node scripts/build-image-variants.mjs && next dev",
+    "build": "node scripts/build-image-variants.mjs && next build && next-sitemap",
+    "check": "node scripts/check.mjs",
     "typecheck": "tsc --noEmit",
     "start": "next start",
     "lint": "next lint",
