@@ -13,6 +13,7 @@ import { Media } from '@/app/_components/media';
 import { getProjects } from '@/app/_utils/helpers/projects.helpers';
 import { Project as ProjectType } from '@/data/projects/types';
 import { useLocale } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 
 const title = 'Work';
 const description = 'A curated collection of my work throughout the years.';
@@ -31,7 +32,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function Work() {
+export default async function Work({ params }: { params: Promise<{ locale: string }> }) {
+  setRequestLocale((await params).locale);
   const projects = getProjects();
   const featuredProject = projects.find((project: ProjectType) => project.featured);
 

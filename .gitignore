@@ -57,3 +57,7 @@ ds.env.local
 .env.local
 .env.local
 .env.local
+
+# resized image copies, built by scripts/build-image-variants.mjs
+/public/_r/
+/src/image-dims.json

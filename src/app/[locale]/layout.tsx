@@ -1,4 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '../i18n/routing';
 import { Analytics } from '@vercel/analytics/react';
@@ -27,6 +28,7 @@ type Props = {
 
 export default async function LocaleLayout(props: Props) {
   const { locale } = await props.params;
+  setRequestLocale(locale);
   const messages = await getMessages(locale);
 
   return (

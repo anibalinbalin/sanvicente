@@ -47,7 +47,6 @@ export const ProjectCard = ({ project, sizes = '100vw' }: ProjectCardProps) => {
             <ThemeImage
               src={src}
               darkSrc={darkSrc}
-              priority
               alt={translationKey ? t(translationKey) : name}
               fill
               style={{ objectFit: 'cover' }}

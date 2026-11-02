@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 import { PATHS } from '@/app/_utils/constants/paths.constants';
 import Image from 'next/image';
 import { BackToLink } from '@/app/_components/back-to-link';
-import { getTranslations, getLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/app/i18n/routing';
 import { TechnologySection } from '@/components/sections/technology-section';
 
@@ -17,8 +17,9 @@ export function generateStaticParams() {
 const title = 'House';
 const description = 'House page';
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const url = new URL(`${PATHS.base}/${params.locale}${PATHS.house}`);
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const url = new URL(`${PATHS.base}/${locale}${PATHS.house}`);
 
   return {
     title,
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     openGraph: {
       url,
       type: 'website',
-      locale: params.locale,
+      locale,
       title,
       description,
     },
@@ -35,18 +36,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 }
 
 interface Props {
-  params: {
+  params: Promise<{
     locale: string;
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  }>;
 }
 
 export default async function HousePage({
   params,
-  searchParams,
 }: Props) {
+  const { locale: currentLocale } = await params;
+  setRequestLocale(currentLocale);
   const t = await getTranslations('house');
-  const currentLocale = await getLocale();
   const homePath = `/${currentLocale}${PATHS.home}`;
 
   return (
